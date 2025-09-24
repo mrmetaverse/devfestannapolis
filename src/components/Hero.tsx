@@ -6,31 +6,34 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
           <div className="mb-8">
-            <div className="text-lg font-semibold text-blue-200 mb-4">
-              9AM — 6PM | Oct 3, 2025
+            <div className="text-lg font-semibold text-blue-200 mb-2">
+              November 15, 2025 | 10:00 AM – 5:00 PM (EST)
+            </div>
+            <div className="text-sm font-medium text-blue-300 mb-6">
+              GDG Annapolis presents
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              DevFest <span className="text-yellow-400">Annapolis</span>
+              <span className="text-yellow-400">Chesapeake</span> DevFest <span className="text-white">2025</span>
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto leading-relaxed mb-8">
-              DevFest Annapolis is an annual, community-led software engineering conference 
-              aimed at educating software developers, architects, entrepreneurs, quality 
-              focused individuals and tech leaders.
+              A Celebration of Technology, Innovation, and Community. Join us for a full day of learning, 
+              building, and connecting. From the latest in AI to hands-on coding, small business clinics, 
+              and family-friendly exploration.
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Link
-              href="#tickets"
+              href="#register"
               className="bg-yellow-400 text-blue-900 px-8 py-4 rounded-full text-lg font-bold hover:bg-yellow-300 transition-all duration-200 transform hover:scale-105"
             >
-              Get Your Tickets
+              🆓 Register Free
             </Link>
             <Link
-              href="#hackathon"
+              href="#activities"
               className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-white hover:text-blue-900 transition-all duration-200"
             >
-              Join the AI Challenge
+              Explore Activities
             </Link>
           </div>
 

@@ -7,6 +7,7 @@ import Hackathon from '@/components/Hackathon'
 import Community from '@/components/Community'
 import Schedule from '@/components/Schedule'
 import Venue from '@/components/Venue'
+import Sponsors from '@/components/Sponsors'
 import Tickets from '@/components/Tickets'
 import Footer from '@/components/Footer'
 
@@ -22,6 +23,7 @@ export default function Home() {
       <Community />
       <Schedule />
       <Venue />
+      <Sponsors />
       <Tickets />
       <Footer />
     </main>

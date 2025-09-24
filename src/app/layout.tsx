@@ -5,12 +5,12 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'DevFest Annapolis 2025 | Community-Led Software Engineering Conference',
-  description: 'DevFest Annapolis is an annual, community-led software engineering conference aimed at educating software developers, architects, entrepreneurs, quality focused individuals and tech leaders.',
-  keywords: 'DevFest, Annapolis, software engineering, developers, conference, AI, technology',
+  title: 'Chesapeake DevFest 2025 | A Celebration of Technology, Innovation, and Community',
+  description: 'Join us for a full day of learning, building, and connecting. From the latest in AI to hands-on coding, small business clinics, and family-friendly exploration at AACC CALT Building.',
+  keywords: 'DevFest, Chesapeake, AI, Google, cloud, developers, conference, technology, family, small business, GDG Annapolis',
   openGraph: {
-    title: 'DevFest Annapolis 2025',
-    description: 'Community-led software engineering conference in Annapolis',
+    title: 'Chesapeake DevFest 2025',
+    description: 'A Celebration of Technology, Innovation, and Community - November 15, 2025',
     type: 'website',
     locale: 'en_US',
   },

@@ -7,19 +7,19 @@ export default function Footer() {
         <div className="text-center">
           <div className="mb-8">
             <div className="text-lg font-semibold text-gray-300 mb-4">
-              9AM — 6PM | Oct 3, 2025
+              November 15, 2025 | 10:00 AM – 5:00 PM (EST)
             </div>
-            <h3 className="text-3xl font-bold mb-2">DevFest Annapolis</h3>
-            <p className="text-gray-300">Historic Inns of Annapolis, 58 State Cir</p>
-            <p className="text-gray-300">Annapolis, MD 21401</p>
+            <h3 className="text-3xl font-bold mb-2">Chesapeake DevFest 2025</h3>
+            <p className="text-gray-300">AACC CALT Building</p>
+            <p className="text-gray-300">101 College Parkway, Arnold, MD 21012</p>
           </div>
           
           <div className="mb-8">
             <Link
-              href="#tickets"
+              href="#register"
               className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all duration-200 transform hover:scale-105"
             >
-              Get Your Tickets
+              Register Free
             </Link>
           </div>
         </div>
@@ -27,7 +27,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8 text-center">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 mb-4 md:mb-0">
-              Copyright © 2025 DevFest Annapolis.
+              Copyright © 2025 Chesapeake DevFest - GDG Annapolis.
             </p>
             <div className="flex space-x-6">
               <Link href="https://matrix.to/#/#devfestannapolis:matrix.org" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">

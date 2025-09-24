@@ -6,18 +6,20 @@ export default function Venue() {
           <div>
             <h2 className="text-4xl font-bold text-gray-900 mb-8">Venue</h2>
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Historic Inns of Annapolis</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">AACC CALT Building</h3>
               <div className="text-lg text-gray-700 space-y-2">
-                <p className="font-semibold">58 State Cir</p>
-                <p>Annapolis, MD 21401</p>
+                <p className="font-semibold">Anne Arundel Community College</p>
+                <p>101 College Parkway</p>
+                <p>Arnold, MD 21012</p>
+                <p className="text-green-600 font-medium">🚗 Free Parking Available on Campus</p>
               </div>
             </div>
             
             <div className="bg-blue-600 text-white p-6 rounded-lg mb-8">
-              <div className="text-lg font-semibold mb-2">9AM — 6PM | Oct 3, 2025</div>
-              <h3 className="text-2xl font-bold">DevFest Annapolis</h3>
-              <p className="mt-2">Historic Inns of Annapolis, 58 State Cir</p>
-              <p>Annapolis, MD 21401</p>
+              <div className="text-lg font-semibold mb-2">November 15, 2025 | 10:00 AM – 5:00 PM (EST)</div>
+              <h3 className="text-2xl font-bold">Chesapeake DevFest 2025</h3>
+              <p className="mt-2">AACC CALT Building</p>
+              <p>101 College Parkway, Arnold, MD 21012</p>
             </div>
             
             <a

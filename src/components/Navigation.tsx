@@ -8,11 +8,11 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
-    { href: '#speakers', label: 'Speakers' },
+    { href: '#activities', label: 'Activities' },
     { href: '#get-involved', label: 'Get Involved' },
-    { href: '#hackathon', label: 'Agentic AI Hackathon' },
-    { href: 'https://matrix.to/#/#devfestannapolis:matrix.org', label: 'Community', external: true },
     { href: '#venue', label: 'Venue' },
+    { href: 'https://matrix.to/#/#devfestannapolis:matrix.org', label: 'Community', external: true },
+    { href: '#register', label: 'Register' },
   ]
 
   return (
@@ -20,8 +20,8 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-blue-600">DevFest</div>
-            <div className="text-2xl font-bold text-gray-900">Annapolis</div>
+            <div className="text-2xl font-bold text-blue-600">Chesapeake</div>
+            <div className="text-2xl font-bold text-gray-900">DevFest</div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -37,10 +37,10 @@ export default function Navigation() {
               </Link>
             ))}
             <Link
-              href="#tickets"
+              href="#register"
               className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200 font-medium"
             >
-              Get Your Tickets
+              Register Free
             </Link>
           </div>
 
@@ -71,11 +71,11 @@ export default function Navigation() {
                 </Link>
               ))}
               <Link
-                href="#tickets"
+                href="#register"
                 className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200 font-medium mx-4 text-center"
                 onClick={() => setIsOpen(false)}
               >
-                Get Your Tickets
+                Register Free
               </Link>
             </div>
           </div>
