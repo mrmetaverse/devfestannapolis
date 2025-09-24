@@ -334,11 +334,11 @@ export default function CommunityPage() {
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                  Slack bridge (available)
+                  Slack bridge (coming soon)
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
-                  Telegram bridge (available)
+                  Telegram bridge (coming soon)
                 </li>
               </ul>
             </div>
