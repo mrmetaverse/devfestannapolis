@@ -24,9 +24,128 @@ export default function CommunityPage() {
               Join Our <span className="text-yellow-400">Community</span>
             </h1>
             <p className="text-xl text-purple-100 max-w-3xl mx-auto leading-relaxed">
-              Connect with fellow developers, get event updates, and be part of the Chesapeake DevFest community 
-              through our secure, decentralized Matrix space.
+              Connect with fellow developers, get event updates, and be part of a volunteer-driven community 
+              that truly cares about technology in Maryland and connecting folks to resources that make a real difference.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* About Us Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-8">Who We Are</h2>
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+              Chesapeake DevFest is organized by passionate volunteers from across the Chesapeake region 
+              who truly care about technology in Maryland and connecting folks to resources that make a real difference.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            <div className="bg-blue-50 rounded-2xl p-8">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mr-4">
+                  <span className="text-white font-bold text-xl">GDG</span>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900">Google Developer Groups</h3>
+                  <p className="text-blue-600 font-medium">Global Community Network</p>
+                </div>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                Google Developer Groups (GDG) are community-driven organizations that bring together developers 
+                interested in Google technologies. With hundreds of chapters worldwide, GDGs provide a platform 
+                for learning, sharing, and building with the latest Google tools and technologies.
+              </p>
+            </div>
+
+            <div className="bg-green-50 rounded-2xl p-8">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center mr-4">
+                  <span className="text-white font-bold text-lg">ANN</span>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900">GDG Annapolis</h3>
+                  <p className="text-green-600 font-medium">Our Local Chapter</p>
+                </div>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                GDG Annapolis serves the greater Chesapeake Bay region, bringing together developers, entrepreneurs, 
+                students, and tech enthusiasts. We organize meetups, workshops, and events like DevFest to foster 
+                learning, networking, and innovation in our local tech community.
+              </p>
+            </div>
+
+            <div className="bg-purple-50 rounded-2xl p-8">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mr-4">
+                  <span className="text-white font-bold text-lg">AACC</span>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900">Anne Arundel Community College</h3>
+                  <p className="text-purple-600 font-medium">Our Venue Partner</p>
+                </div>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                AACC is a leading community college serving Anne Arundel County and beyond. Their CALT 
+                (Center for Applied Learning & Technology) Building provides state-of-the-art facilities 
+                perfect for our tech conference, supporting education and innovation in our region.
+              </p>
+            </div>
+
+            <div className="bg-orange-50 rounded-2xl p-8">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center mr-4">
+                  <span className="text-white font-bold text-lg">♥</span>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900">Volunteer-Driven</h3>
+                  <p className="text-orange-600 font-medium">Community First</p>
+                </div>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                Our organizing team consists of volunteers from across the Chesapeake region—developers, 
+                educators, entrepreneurs, and tech advocates who donate their time because they believe 
+                in building a stronger, more connected tech community in Maryland.
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-2xl p-8 border border-indigo-200">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Why Matrix for Our Community?</h3>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="text-lg font-bold text-gray-900 mb-3">🛡️ Privacy & Security</h4>
+                <p className="text-gray-700 mb-4">
+                  As a community that values open source and developer rights, we chose Matrix for its 
+                  end-to-end encryption and decentralized architecture. Your conversations stay private.
+                </p>
+              </div>
+              <div>
+                <h4 className="text-lg font-bold text-gray-900 mb-3">🌐 Open Standards</h4>
+                <p className="text-gray-700 mb-4">
+                  Matrix aligns with our values of openness and interoperability. It&apos;s built on open 
+                  standards, just like the web technologies we love and teach.
+                </p>
+              </div>
+              <div>
+                <h4 className="text-lg font-bold text-gray-900 mb-3">🔗 Bridge Everything</h4>
+                <p className="text-gray-700 mb-4">
+                  Our community members use different platforms. Matrix lets us bridge Discord, Slack, 
+                  Telegram, and more, so everyone can participate from their preferred app.
+                </p>
+              </div>
+              <div>
+                <h4 className="text-lg font-bold text-gray-900 mb-3">🚀 Future-Proof</h4>
+                <p className="text-gray-700 mb-4">
+                  Matrix is designed for the long term. As our community grows, Matrix scales with us 
+                  without vendor lock-in or platform dependency concerns.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -258,10 +377,10 @@ export default function CommunityPage() {
       {/* Call to Action */}
       <section className="py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Join the Community?</h2>
+          <h2 className="text-4xl font-bold mb-6">Ready to Join Our Mission?</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Connect with developers, get event updates, and be part of the conversation leading up to 
-            Chesapeake DevFest 2025.
+            Join a community of passionate volunteers from across the Chesapeake region who are building 
+            a stronger, more connected tech ecosystem in Maryland. Every voice matters.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
