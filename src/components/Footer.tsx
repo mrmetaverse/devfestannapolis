@@ -30,8 +30,8 @@ export default function Footer() {
               Copyright © 2025 Chesapeake DevFest - GDG Annapolis.
             </p>
             <div className="flex space-x-6">
-              <Link href="https://matrix.to/#/#devfestannapolis:matrix.org" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
-                Matrix Community
+              <Link href="/community" className="text-gray-400 hover:text-white transition-colors duration-200">
+                Community
               </Link>
               <Link href="https://github.com/mrmetaverse/devfestannapolis" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
                 GitHub

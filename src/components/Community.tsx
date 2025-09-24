@@ -23,15 +23,23 @@ export default function Community() {
                 Join our Matrix space to connect with speakers, organizers, and fellow attendees. 
                 Get real-time updates, ask questions, and be part of the DevFest Annapolis community.
               </p>
-              <a
-                href="https://matrix.to/#/#devfestannapolis:matrix.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-yellow-400 text-purple-900 px-6 py-3 rounded-full font-bold hover:bg-yellow-300 transition-all duration-200 transform hover:scale-105"
-              >
-                <MessageCircle className="w-5 h-5 mr-2" />
-                Join Matrix Space
-              </a>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="https://matrix.to/#/#devfestannapolis:matrix.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center bg-yellow-400 text-purple-900 px-6 py-3 rounded-full font-bold hover:bg-yellow-300 transition-all duration-200 transform hover:scale-105"
+                >
+                  <MessageCircle className="w-5 h-5 mr-2" />
+                  Join Matrix Space
+                </a>
+                <a
+                  href="/community"
+                  className="inline-flex items-center border-2 border-white text-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-purple-900 transition-all duration-200"
+                >
+                  Learn About Matrix
+                </a>
+              </div>
             </div>
           </div>
 

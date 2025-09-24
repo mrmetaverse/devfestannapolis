@@ -11,7 +11,7 @@ export default function Navigation() {
     { href: '#activities', label: 'Activities' },
     { href: '#get-involved', label: 'Get Involved' },
     { href: '#venue', label: 'Venue' },
-    { href: 'https://matrix.to/#/#devfestannapolis:matrix.org', label: 'Community', external: true },
+    { href: '/community', label: 'Community' },
     { href: '#register', label: 'Register' },
   ]
 
@@ -30,7 +30,6 @@ export default function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                 className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
               >
                 {item.label}
@@ -63,7 +62,6 @@ export default function Navigation() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                   className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium px-4"
                   onClick={() => setIsOpen(false)}
                 >
