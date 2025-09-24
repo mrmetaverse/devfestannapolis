@@ -4,6 +4,7 @@ import About from '@/components/About'
 import Speakers from '@/components/Speakers'
 import GetInvolved from '@/components/GetInvolved'
 import Hackathon from '@/components/Hackathon'
+import Community from '@/components/Community'
 import Schedule from '@/components/Schedule'
 import Venue from '@/components/Venue'
 import Tickets from '@/components/Tickets'
@@ -18,6 +19,7 @@ export default function Home() {
       <Speakers />
       <GetInvolved />
       <Hackathon />
+      <Community />
       <Schedule />
       <Venue />
       <Tickets />

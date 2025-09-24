@@ -30,20 +30,20 @@ export default function Footer() {
               Copyright © 2025 DevFest Annapolis.
             </p>
             <div className="flex space-x-6">
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
-                Footer Link
+              <Link href="https://matrix.to/#/#devfestannapolis:matrix.org" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
+                Matrix Community
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
-                Footer Link
+              <Link href="https://github.com/mrmetaverse/devfestannapolis" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
+                GitHub
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
-                Footer Link
+              <Link href="#speakers" className="text-gray-400 hover:text-white transition-colors duration-200">
+                Speakers
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
-                Footer Link
+              <Link href="#hackathon" className="text-gray-400 hover:text-white transition-colors duration-200">
+                Hackathon
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
-                Footer Link
+              <Link href="#get-involved" className="text-gray-400 hover:text-white transition-colors duration-200">
+                Get Involved
               </Link>
             </div>
           </div>

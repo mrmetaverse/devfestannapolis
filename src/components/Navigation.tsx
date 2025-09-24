@@ -10,9 +10,9 @@ export default function Navigation() {
   const navItems = [
     { href: '#speakers', label: 'Speakers' },
     { href: '#get-involved', label: 'Get Involved' },
-    { href: '#hackathon', label: 'Agentic AI Hackathon Registration' },
+    { href: '#hackathon', label: 'Agentic AI Hackathon' },
+    { href: 'https://matrix.to/#/#devfestannapolis:matrix.org', label: 'Community', external: true },
     { href: '#venue', label: 'Venue' },
-    { href: '#team', label: 'Team' },
   ]
 
   return (
@@ -30,6 +30,7 @@ export default function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
+                {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                 className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
               >
                 {item.label}
@@ -62,6 +63,7 @@ export default function Navigation() {
                 <Link
                   key={item.href}
                   href={item.href}
+                  {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                   className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium px-4"
                   onClick={() => setIsOpen(false)}
                 >
