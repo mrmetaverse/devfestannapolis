@@ -1,25 +1,25 @@
 const involvement = [
   {
     title: "Sponsor",
-    description: "Support innovation; become an official Chesapeake DevFest sponsor.",
+    description: "Support innovation; become an official Annapolis DevFest sponsor.",
     action: "Apply to sponsor",
     href: "#sponsor"
   },
   {
     title: "Partner",
-    description: "Partner with Chesapeake DevFest to broaden your reach.",
+    description: "Partner with Annapolis DevFest to broaden your reach.",
     action: "Apply to partner",
     href: "#partner"
   },
   {
     title: "Speak",
-    description: "Showcase your knowledge; apply to speak at Chesapeake DevFest 2025.",
+    description: "Showcase your knowledge; apply to speak at Annapolis DevFest 2025.",
     action: "Apply to speak",
     href: "#speak"
   },
   {
     title: "Volunteer",
-    description: "Be part of Chesapeake DevFest 25&apos;s success; join our volunteer community.",
+    description: "Be part of Annapolis DevFest 25's success; join our volunteer community.",
     action: "Join Community",
     href: "/community"
   }

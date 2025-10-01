@@ -17,10 +17,10 @@ export default function Community() {
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
               <div className="flex items-center mb-6">
                 <MessageCircle className="w-8 h-8 text-yellow-400 mr-4" />
-                <h3 className="text-2xl font-bold">Matrix Community Space</h3>
+                <h3 className="text-2xl font-bold">Connect with Us</h3>
               </div>
               <p className="text-lg text-purple-100 mb-6 leading-relaxed">
-                Join our Matrix space to connect with speakers, organizers, and fellow attendees. 
+                Join our community to connect with speakers, organizers, and fellow attendees. 
                 Get real-time updates, ask questions, and be part of the DevFest Annapolis community.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -31,13 +31,13 @@ export default function Community() {
                   className="inline-flex items-center bg-yellow-400 text-purple-900 px-6 py-3 rounded-full font-bold hover:bg-yellow-300 transition-all duration-200 transform hover:scale-105"
                 >
                   <MessageCircle className="w-5 h-5 mr-2" />
-                  Join Matrix Space
+                  Join Our Chat
                 </a>
                 <a
                   href="/community"
                   className="inline-flex items-center border-2 border-white text-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-purple-900 transition-all duration-200"
                 >
-                  Learn About Matrix
+                  Learn More
                 </a>
               </div>
             </div>

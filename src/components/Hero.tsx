@@ -13,7 +13,7 @@ export default function Hero() {
               GDG Annapolis presents
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              <span className="text-yellow-400">Chesapeake</span> DevFest <span className="text-white">2025</span>
+              <span className="text-yellow-400">Annapolis</span> DevFest <span className="text-white">2025</span>
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto leading-relaxed mb-8">
               A Celebration of Technology, Innovation, and Community. Join us for a full day of learning, 
