@@ -3,8 +3,8 @@ import { ArrowLeft, MessageCircle } from 'lucide-react'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Community - Join Our Community | Annapolis DevFest 2025',
-  description: 'Join the Annapolis DevFest community and connect with fellow developers, organizers, and tech enthusiasts in Maryland.',
+  title: 'Community - Join Our Community | DevFest Annapolis 2025',
+  description: 'Join the DevFest Annapolis community and connect with fellow developers, organizers, and tech enthusiasts in Maryland.',
   keywords: 'community, chat, developers, DevFest, Annapolis, Chesapeake, Anne Arundel County, Maryland, technology, networking',
 }
 
@@ -37,7 +37,7 @@ export default function CommunityPage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-8">Who We Are</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Annapolis DevFest is organized by passionate volunteers from across the Chesapeake region 
+              DevFest Annapolis is organized by passionate volunteers from across the Chesapeake region 
               who truly care about technology in Maryland and connecting folks to resources that make a real difference.
             </p>
           </div>
@@ -187,7 +187,7 @@ export default function CommunityPage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-8">How to Join Our Community</h2>
             <p className="text-xl text-gray-700">
-              Follow these simple steps to join the Annapolis DevFest community
+              Follow these simple steps to join the DevFest Annapolis community
             </p>
           </div>
 

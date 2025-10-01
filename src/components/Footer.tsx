@@ -9,7 +9,7 @@ export default function Footer() {
             <div className="text-lg font-semibold text-gray-300 mb-4">
               November 15, 2025 | 10:00 AM – 5:00 PM (EST)
             </div>
-            <h3 className="text-3xl font-bold mb-2">Annapolis DevFest 2025</h3>
+            <h3 className="text-3xl font-bold mb-2">DevFest Annapolis 2025</h3>
             <p className="text-gray-300">AACC CALT Building</p>
             <p className="text-gray-300">101 College Parkway, Arnold, MD 21012</p>
           </div>
@@ -27,7 +27,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8 text-center">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 mb-4 md:mb-0">
-              Copyright © 2025 Annapolis DevFest - GDG Annapolis.
+              Copyright © 2025 DevFest Annapolis - GDG Annapolis.
             </p>
             <div className="flex space-x-6">
               <Link href="/community" className="text-gray-400 hover:text-white transition-colors duration-200">
