@@ -3,14 +3,14 @@ export default function Tickets() {
     <section id="register" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Register for Free</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Registration Opening Soon</h2>
           <p className="text-xl text-gray-700 mb-8">
-            🆓 Admission is free, but space is limited. Register now to save your spot!
+            🆓 Admission is free, but space is limited. We'll be using Eventbrite for registration!
           </p>
         </div>
 
         <div className="max-w-md mx-auto">
-          <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 text-center border-2 border-blue-200 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+          <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 text-center border-2 border-blue-200 hover:shadow-xl transition-all duration-300">
             <div className="text-6xl mb-4">🎟️</div>
             <h3 className="text-3xl font-bold text-gray-900 mb-4">Free Admission</h3>
             <div className="text-blue-600 font-semibold mb-4">November 15, 2025</div>
@@ -18,11 +18,14 @@ export default function Tickets() {
             <div className="text-gray-600 mb-6">
               Includes all activities, food, swag, and networking opportunities
             </div>
-            <button className="w-full bg-blue-600 text-white py-4 px-8 rounded-full text-lg font-bold hover:bg-blue-700 transition-colors duration-200 mb-4 transform hover:scale-105">
-              🚀 Register Now
+            <button 
+              disabled 
+              className="w-full bg-gray-400 text-gray-700 py-4 px-8 rounded-full text-lg font-bold cursor-not-allowed mb-4"
+            >
+              🚀 Registration via Eventbrite Coming Soon
             </button>
             <div className="text-sm text-gray-500">
-              Limited capacity - Register early to secure your spot
+              Registration will open soon - Join our community to get notified!
             </div>
           </div>
         </div>

@@ -15,12 +15,12 @@ export default function Footer() {
           </div>
           
           <div className="mb-8">
-            <Link
-              href="#register"
-              className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all duration-200 transform hover:scale-105"
+            <button
+              disabled
+              className="inline-block bg-gray-500 text-gray-300 px-8 py-4 rounded-full text-lg font-bold cursor-not-allowed"
             >
-              Register Free
-            </Link>
+              Registration Coming Soon
+            </button>
           </div>
         </div>
         

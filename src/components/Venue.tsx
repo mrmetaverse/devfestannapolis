@@ -22,12 +22,12 @@ export default function Venue() {
               <p>101 College Parkway, Arnold, MD 21012</p>
             </div>
             
-            <a
-              href="#tickets"
-              className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all duration-200 transform hover:scale-105"
+            <button
+              disabled
+              className="inline-block bg-gray-400 text-gray-700 px-8 py-4 rounded-full text-lg font-bold cursor-not-allowed"
             >
-              Get Your Tickets
-            </a>
+              Registration Coming Soon
+            </button>
           </div>
           
           <div>

@@ -23,12 +23,12 @@ export default function Hero() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Link
-              href="#register"
-              className="bg-yellow-400 text-blue-900 px-8 py-4 rounded-full text-lg font-bold hover:bg-yellow-300 transition-all duration-200 transform hover:scale-105"
+            <button
+              disabled
+              className="bg-gray-400 text-gray-700 px-8 py-4 rounded-full text-lg font-bold cursor-not-allowed opacity-75"
             >
-              🆓 Register Free
-            </Link>
+              🆓 Registration Coming Soon
+            </button>
             <Link
               href="#activities"
               className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-white hover:text-blue-900 transition-all duration-200"

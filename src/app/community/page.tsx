@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowLeft, MessageCircle, Shield, Globe, Users, Zap, Link as LinkIcon } from 'lucide-react'
+import { ArrowLeft, MessageCircle } from 'lucide-react'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -141,7 +141,7 @@ export default function CommunityPage() {
               <div>
                 <h4 className="text-lg font-bold text-gray-900 mb-3">🚀 Long-term Impact</h4>
                 <p className="text-gray-700 mb-4">
-                  Our goal is to create lasting connections and drive innovation in Maryland's 
+                  Our goal is to create lasting connections and drive innovation in Maryland&apos;s 
                   tech ecosystem for years to come.
                 </p>
               </div>
@@ -200,7 +200,7 @@ export default function CommunityPage() {
               <div className="flex-grow">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Click to Join</h3>
                 <p className="text-gray-700 mb-6">
-                  Click the link below to join our community chat space. You can create an account if you don't have one, 
+                  Click the link below to join our community chat space. You can create an account if you don&apos;t have one, 
                   or sign in with an existing account.
                 </p>
                 <a
@@ -223,7 +223,7 @@ export default function CommunityPage() {
               <div className="flex-grow">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Start Connecting</h3>
                 <p className="text-gray-700 mb-6">
-                  Once you're in, introduce yourself, ask questions, and connect with other developers, speakers, 
+                  Once you&apos;re in, introduce yourself, ask questions, and connect with other developers, speakers, 
                   and organizers. Join discussions and stay updated on DevFest news.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
