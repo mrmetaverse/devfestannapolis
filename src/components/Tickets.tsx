@@ -5,7 +5,7 @@ export default function Tickets() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Registration Opening Soon</h2>
           <p className="text-xl text-gray-700 mb-8">
-            🆓 Admission is free, but space is limited. We'll be using Eventbrite for registration!
+            🆓 Admission is free, but space is limited. We&apos;ll be using Eventbrite for registration!
           </p>
         </div>
 

@@ -37,7 +37,7 @@ export default function WipModal() {
             <h2 className="text-2xl font-bold">Work in Progress</h2>
           </div>
           <p className="text-orange-100">
-            We're putting the finishing touches on the site!
+            We&apos;re putting the finishing touches on the site!
           </p>
         </div>
 
@@ -49,7 +49,7 @@ export default function WipModal() {
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Registration Coming Soon</h3>
                 <p className="text-gray-600 text-sm">
-                  We'll be using <strong>Eventbrite</strong> for registration. The registration link and event details will be available soon!
+                  We&apos;ll be using <strong>Eventbrite</strong> for registration. The registration link and event details will be available soon!
                 </p>
               </div>
             </div>
