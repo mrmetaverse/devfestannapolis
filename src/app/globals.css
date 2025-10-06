@@ -1,29 +1,142 @@
 @import "tailwindcss";
 
+/* Google DevFest Color Palette */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Primary Google Colors */
+  --google-blue: #4285F4;
+  --google-red: #EA4335;
+  --google-yellow: #FBBC04;
+  --google-green: #34A853;
+  
+  /* DevFest Specific Colors */
+  --devfest-dark-blue: #1A73E8;
+  --devfest-light-blue: #E8F0FE;
+  --devfest-purple: #9C27B0;
+  --devfest-orange: #FF6D01;
+  
+  /* Neutral Colors */
+  --gray-900: #202124;
+  --gray-700: #5F6368;
+  --gray-500: #9AA0A6;
+  --gray-300: #DADCE0;
+  --gray-100: #F8F9FA;
+  --white: #FFFFFF;
+  
+  /* Background and Foreground */
+  --background: var(--white);
+  --foreground: var(--gray-900);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-roboto), system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
 }
+
+/* DevFest Typography Classes */
+.devfest-heading-1 {
+  font-family: var(--font-open-sans), system-ui, sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--gray-900);
+}
+
+.devfest-heading-2 {
+  font-family: var(--font-open-sans), system-ui, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--gray-900);
+}
+
+.devfest-heading-3 {
+  font-family: var(--font-open-sans), system-ui, sans-serif;
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--gray-900);
+}
+
+.devfest-body {
+  font-family: var(--font-roboto), system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--gray-700);
+}
+
+.devfest-body-large {
+  font-family: var(--font-roboto), system-ui, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--gray-700);
+}
+
+/* DevFest Button Styles */
+.devfest-btn-primary {
+  background: var(--google-blue);
+  color: var(--white);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: var(--font-roboto), system-ui, sans-serif;
+  font-weight: 500;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.devfest-btn-primary:hover {
+  background: var(--devfest-dark-blue);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+}
+
+.devfest-btn-secondary {
+  background: transparent;
+  color: var(--google-blue);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: var(--font-roboto), system-ui, sans-serif;
+  font-weight: 500;
+  border: 2px solid var(--google-blue);
+  transition: all 0.2s ease;
+}
+
+.devfest-btn-secondary:hover {
+  background: var(--devfest-light-blue);
+  transform: translateY(-1px);
+}
+
+/* DevFest Card Styles */
+.devfest-card {
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--gray-300);
+  transition: all 0.3s ease;
+}
+
+.devfest-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Google Color Utility Classes */
+.bg-google-blue { background-color: var(--google-blue); }
+.bg-google-red { background-color: var(--google-red); }
+.bg-google-yellow { background-color: var(--google-yellow); }
+.bg-google-green { background-color: var(--google-green); }
+.bg-devfest-purple { background-color: var(--devfest-purple); }
+.bg-devfest-orange { background-color: var(--devfest-orange); }
+
+.text-google-blue { color: var(--google-blue); }
+.text-google-red { color: var(--google-red); }
+.text-google-yellow { color: var(--google-yellow); }
+.text-google-green { color: var(--google-green); }
+.text-devfest-purple { color: var(--devfest-purple); }
+.text-devfest-orange { color: var(--devfest-orange); }
 
 @layer utilities {
   .animate-marquee {
@@ -32,6 +145,13 @@ body {
   
   .pause-animation {
     animation-play-state: paused;
+  }
+  
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   }
 }
 
