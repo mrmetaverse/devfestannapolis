@@ -16,10 +16,12 @@ export default function Venue() {
             </div>
             
             <div className="bg-blue-600 text-white p-6 rounded-lg mb-8">
-              <div className="text-lg font-semibold mb-2">November 15, 2025 | 10:00 AM – 5:00 PM (EST)</div>
+              <div className="text-lg font-semibold mb-2">📍 November 15, 2025 | 10:00 AM – 5:00 PM (EST)</div>
               <h3 className="text-2xl font-bold">DevFest Annapolis 2025</h3>
-              <p className="mt-2">AACC CALT Building</p>
+              <p className="mt-2">Anne Arundel Community College</p>
+              <p>CALT Building</p>
               <p>101 College Parkway, Arnold, MD 21012</p>
+              <p className="mt-2 text-blue-200">🚗 Free Parking Available</p>
             </div>
             
             <button

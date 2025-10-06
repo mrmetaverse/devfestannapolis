@@ -12,13 +12,12 @@ export default function Hero() {
             <div className="text-sm font-medium text-blue-300 mb-6">
               GDG Annapolis presents
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              <span className="text-yellow-400">Annapolis</span> DevFest <span className="text-white">2025</span>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              <span className="text-yellow-400">Annapolis DevFest 2025:</span><br />
+              <span className="text-white">A Celebration of Technology, Innovation & Community</span>
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto leading-relaxed mb-8">
-              A Celebration of Technology, Innovation, and Community. Join us for a full day of learning, 
-              building, and connecting. From the latest in AI to hands-on coding, small business clinics, 
-              and family-friendly exploration.
+              Maryland&apos;s premier tech and innovation conference, bringing developers, entrepreneurs, and business leaders together for a full day of learning and connection. Hosted by Google Developer Group Annapolis at Anne Arundel Community College&apos;s CALT Building.
             </p>
           </div>
 

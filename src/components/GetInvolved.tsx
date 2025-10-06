@@ -3,25 +3,25 @@ const involvement = [
     title: "Sponsor",
     description: "Support innovation; become an official DevFest Annapolis sponsor.",
     action: "Apply to sponsor",
-    href: "#sponsor"
+    href: "https://forms.gle/X2BawbWefoRyBMqu8"
   },
   {
     title: "Partner",
     description: "Partner with DevFest Annapolis to broaden your reach.",
     action: "Apply to partner",
-    href: "#partner"
+    href: "https://forms.gle/X2BawbWefoRyBMqu8"
   },
   {
     title: "Speak",
     description: "Showcase your knowledge; apply to speak at DevFest Annapolis 2025.",
     action: "Apply to speak",
-    href: "#speak"
+    href: "https://forms.gle/KRDGbMn6m9t4UPdv9"
   },
   {
     title: "Volunteer",
     description: "Be part of DevFest Annapolis 25's success; join our volunteer community.",
     action: "Join Community",
-    href: "/community"
+    href: "https://forms.gle/cCes2WUpKPheFHZu7"
   }
 ]
 
@@ -40,6 +40,8 @@ export default function GetInvolved() {
               <p className="text-gray-700 mb-6 leading-relaxed">{item.description}</p>
               <a
                 href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block px-6 py-3 rounded-full font-semibold transition-all duration-200 bg-blue-600 text-white hover:bg-blue-700 transform hover:scale-105"
               >
                 {item.action}

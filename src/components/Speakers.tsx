@@ -61,12 +61,27 @@ export default function Speakers() {
         </div>
 
         <div className="text-center">
-          <a
-            href="#register"
-            className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all duration-200 transform hover:scale-105"
+          <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 mb-8 max-w-2xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Want to Speak at DevFest Annapolis?</h3>
+            <p className="text-gray-700 mb-6">
+              Share your expertise with Maryland&apos;s tech community. We&apos;re looking for speakers on AI, cloud technologies, 
+              web development, mobile apps, and emerging tech trends.
+            </p>
+            <a
+              href="https://forms.gle/KRDGbMn6m9t4UPdv9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all duration-200 transform hover:scale-105 mr-4"
+            >
+              Apply to Speak
+            </a>
+          </div>
+          <button
+            disabled
+            className="inline-block bg-gray-400 text-gray-700 px-8 py-4 rounded-full text-lg font-bold cursor-not-allowed"
           >
-            Register Free
-          </a>
+            Registration Opening Soon
+          </button>
         </div>
       </div>
     </section>

@@ -3,9 +3,9 @@ export default function Tickets() {
     <section id="register" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Registration Opening Soon</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Register for Annapolis DevFest 2025</h2>
           <p className="text-xl text-gray-700 mb-8">
-            🆓 Admission is free, but space is limited. We&apos;ll be using Eventbrite for registration!
+            �️ Admission is free, but space is limited. Secure your seat today for Maryland&apos;s premier tech conference.
           </p>
         </div>
 
@@ -22,10 +22,10 @@ export default function Tickets() {
               disabled 
               className="w-full bg-gray-400 text-gray-700 py-4 px-8 rounded-full text-lg font-bold cursor-not-allowed mb-4"
             >
-              🚀 Registration via Eventbrite Coming Soon
+              🚀 Registration via Eventbrite Opening Soon
             </button>
             <div className="text-sm text-gray-500">
-              Registration will open soon - Join our community to get notified!
+              Registration is quick and free - reserve your place at Annapolis DevFest 2025
             </div>
           </div>
         </div>

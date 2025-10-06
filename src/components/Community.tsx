@@ -66,6 +66,23 @@ export default function Community() {
             </div>
           </div>
         </div>
+
+        {/* Volunteer Call-to-Action */}
+        <div className="mt-16 bg-white/20 backdrop-blur-sm rounded-2xl p-8 text-center">
+          <h3 className="text-2xl font-bold text-white mb-4">Help Make DevFest Annapolis Amazing!</h3>
+          <p className="text-purple-100 mb-6 max-w-2xl mx-auto">
+            Join our volunteer team and help create an incredible experience for Maryland&apos;s tech community. 
+            Meet amazing people, gain event experience, and contribute to something meaningful.
+          </p>
+          <a
+            href="https://forms.gle/cCes2WUpKPheFHZu7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center bg-yellow-400 text-purple-900 px-8 py-4 rounded-full text-lg font-bold hover:bg-yellow-300 transition-all duration-200 transform hover:scale-105"
+          >
+            Volunteer with Us
+          </a>
+        </div>
       </div>
     </section>
   )
