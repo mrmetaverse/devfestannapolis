@@ -44,18 +44,19 @@ function Ground() {
 function Sky() {
   return (
     <>
-      {/* Sky sphere */}
+      {/* Sky sphere - smaller and positioned better */}
       <mesh position={[0, 0, 0]}>
-        <sphereGeometry args={[200, 32, 32]} />
+        <sphereGeometry args={[120, 16, 16]} />
         <meshToonMaterial color="#87CEEB" side={THREE.BackSide} />
       </mesh>
       
-      {/* Clouds */}
-      <Cloud position={[-30, 40, -50]} />
-      <Cloud position={[40, 35, -30]} />
-      <Cloud position={[10, 45, -80]} />
-      <Cloud position={[-60, 38, -20]} />
-      <Cloud position={[70, 42, -60]} />
+      {/* Clouds - positioned lower and closer */}
+      <Cloud position={[-25, 25, -30]} />
+      <Cloud position={[30, 20, -25]} />
+      <Cloud position={[10, 30, -40]} />
+      <Cloud position={[-40, 22, -15]} />
+      <Cloud position={[45, 28, -35]} />
+      <Cloud position={[0, 35, -50]} />
     </>
   )
 }
@@ -341,7 +342,12 @@ export default function Hero() {
       {/* Three.js Scene */}
       <div className="absolute inset-0">
         <Canvas 
-          camera={{ position: [0, 12.8, 19.2], fov: 60 }} 
+          camera={{ 
+            position: [0, 35, 30], 
+            fov: 90,
+            near: 0.1,
+            far: 500
+          }} 
           gl={{ antialias: false, alpha: false }}
           frameloop="always"
         >
