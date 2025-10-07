@@ -3,7 +3,7 @@
 import React from "react"
 import Link from 'next/link'
 import { Canvas, useFrame } from "@react-three/fiber"
-import { useRef, useState, useMemo, useEffect } from "react"
+import { useRef, useState, useEffect } from "react"
 import * as THREE from "three"
 
 function VirtualJoystick({ onMove }: { onMove: (input: { x: number; y: number }) => void }) {
@@ -323,15 +323,6 @@ function Cloud({ position }: { position: [number, number, number] }) {
   )
 }
 
-interface StaticShape {
-  id: number
-  position: [number, number, number]
-  rotation: [number, number, number]
-  type: "box" | "sphere" | "cylinder" | "pyramid"
-  scale: number
-  color: string
-}
-
 interface RollingBallState {
   position: [number, number, number]
   velocity: [number, number, number]
@@ -347,13 +338,6 @@ function MayanPyramid() {
 function StaticShapes() {
   // Remove all the small obstacles, just keep the pyramid
   return <MayanPyramid />
-}
-
-interface Ball {
-  position: [number, number, number]
-  velocity: [number, number, number]
-  rotation: [number, number, number]
-  angularVelocity: [number, number, number]
 }
 
 function RollingBall({ onRutChange, onPointsChange, joystickInput, points }: { 
@@ -451,7 +435,6 @@ function RollingBall({ onRutChange, onPointsChange, joystickInput, points }: {
     const ballRadius = baseRadius * scaleMultiplier
     const groundLevel = 0
     const diskRadius = 22.5
-    const minY = groundLevel + ballRadius
     
     // Check if ball is in the rut (positioned at [8, -0.3, -5])
     const rutX = 8

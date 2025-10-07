@@ -55,7 +55,7 @@ export default function Venue() {
                 <h4 className="devfest-heading-3 mb-2">Modern Campus Facility</h4>
                 <p className="devfest-body">
                   The CALT Building features cutting-edge technology infrastructure, 
-                  perfect for hosting Maryland's premier developer conference.
+                  perfect for hosting Maryland&apos;s premier developer conference.
                 </p>
               </div>
             </div>
