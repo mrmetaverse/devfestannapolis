@@ -9,10 +9,9 @@ export default function Navigation() {
 
   const navItems = [
     { href: '#activities', label: 'Activities' },
-    { href: '#get-involved', label: 'Get Involved' },
     { href: '#venue', label: 'Venue' },
-    { href: '/community', label: 'Community' },
-    { href: '#register', label: 'Register' },
+    { href: '#community', label: 'Community' },
+    { href: 'https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909', label: 'Register' },
   ]
 
   return (
@@ -36,7 +35,9 @@ export default function Navigation() {
               </Link>
             ))}
             <Link
-              href="#register"
+              href="https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200 font-medium"
             >
               Register Free
@@ -69,7 +70,9 @@ export default function Navigation() {
                 </Link>
               ))}
               <Link
-                href="#register"
+                href="https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200 font-medium mx-4 text-center"
                 onClick={() => setIsOpen(false)}
               >

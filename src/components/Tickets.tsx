@@ -1,3 +1,5 @@
+'use client'
+
 export default function Tickets() {
   return (
     <section id="register" className="py-20 bg-white">
@@ -19,10 +21,10 @@ export default function Tickets() {
               Includes all activities, food, swag, and networking opportunities
             </div>
             <button 
-              disabled 
-              className="w-full bg-gray-400 text-gray-700 py-4 px-8 rounded-full text-lg font-bold cursor-not-allowed mb-4"
+              onClick={() => window.open('https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909', '_blank')}
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 px-8 rounded-full text-lg font-bold transition-colors duration-200 mb-4"
             >
-              🚀 Registration via Eventbrite Opening Soon
+              🎫 Register Free on Eventbrite
             </button>
             <div className="text-sm text-gray-500">
               Registration is quick and free - reserve your place at Annapolis DevFest 2025

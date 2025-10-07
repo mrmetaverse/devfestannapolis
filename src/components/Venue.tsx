@@ -1,3 +1,5 @@
+'use client'
+
 export default function Venue() {
   return (
     <section id="venue" className="py-20 bg-gray-100">
@@ -33,10 +35,10 @@ export default function Venue() {
               <p className="text-blue-200 mb-4">Full day of tech talks, workshops, and networking</p>
               
               <button
-                disabled
-                className="devfest-btn-secondary bg-white text-google-blue border-white opacity-60 cursor-not-allowed mt-4"
+                onClick={() => window.open('https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909', '_blank')}
+                className="devfest-btn-secondary bg-white text-google-blue border-white hover:bg-blue-50 cursor-pointer mt-4"
               >
-                🎟️ Registration Opening Soon
+                🎟️ Get Your Tickets Now
               </button>
             </div>
           </div>

@@ -47,10 +47,16 @@ export default function WipModal() {
             <div className="flex items-start space-x-3">
               <Calendar className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
               <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Registration Coming Soon</h3>
+                <h3 className="font-semibold text-gray-900 mb-1">Registration is Now Open!</h3>
                 <p className="text-gray-600 text-sm">
-                  We&apos;ll be using <strong>Eventbrite</strong> for registration. The registration link and event details will be available soon!
+                  Registration is available through <strong>Eventbrite</strong>. Space is limited, so get your free ticket today!
                 </p>
+                <button
+                  onClick={() => window.open('https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909', '_blank')}
+                  className="mt-2 bg-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-green-700 transition-colors duration-200"
+                >
+                  Get Your Free Ticket
+                </button>
               </div>
             </div>
 

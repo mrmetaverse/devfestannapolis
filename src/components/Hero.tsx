@@ -669,12 +669,14 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-              <button
-                disabled
-                className="devfest-btn-primary opacity-60 cursor-not-allowed pointer-events-auto"
+              <Link
+                href="https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="devfest-btn-primary pointer-events-auto"
               >
-                🆓 Registration Coming Soon
-              </button>
+                � Register Free
+              </Link>
               <Link
                 href="#activities"
                 className="devfest-btn-secondary pointer-events-auto"

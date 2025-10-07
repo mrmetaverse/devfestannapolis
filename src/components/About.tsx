@@ -1,3 +1,5 @@
+'use client'
+
 export default function About() {
   return (
     <section className="py-20 bg-gray-50">
@@ -60,10 +62,10 @@ export default function About() {
               <h3 className="text-2xl font-bold mb-4">🎟️ Free Registration</h3>
               <p className="text-lg mb-4">Admission is free, but space is limited</p>
               <button
-                disabled
-                className="bg-white text-green-600 px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors duration-200"
+                onClick={() => window.open('https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909', '_blank')}
+                className="bg-white text-green-600 px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors duration-200 cursor-pointer"
               >
-                Registration Opening Soon
+                Get Your Free Ticket
               </button>
             </div>
           </div>

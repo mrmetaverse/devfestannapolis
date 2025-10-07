@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 
 export default function Footer() {
@@ -16,10 +18,10 @@ export default function Footer() {
           
           <div className="mb-8">
             <button
-              disabled
-              className="inline-block bg-gray-500 text-gray-300 px-8 py-4 rounded-full text-lg font-bold cursor-not-allowed"
+              onClick={() => window.open('https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909', '_blank')}
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-colors duration-200 cursor-pointer"
             >
-              Registration Coming Soon
+              Get Your Tickets Now
             </button>
           </div>
         </div>

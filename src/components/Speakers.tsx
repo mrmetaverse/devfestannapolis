@@ -1,3 +1,5 @@
+'use client'
+
 interface Speaker {
   name: string
   title: string
@@ -77,10 +79,10 @@ export default function Speakers() {
             </a>
           </div>
           <button
-            disabled
-            className="inline-block bg-gray-400 text-gray-700 px-8 py-4 rounded-full text-lg font-bold cursor-not-allowed"
+            onClick={() => window.open('https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909', '_blank')}
+            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-bold cursor-pointer transition-colors duration-200"
           >
-            Registration Opening Soon
+            Get Your Tickets Now
           </button>
         </div>
       </div>
