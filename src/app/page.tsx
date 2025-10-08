@@ -10,12 +10,10 @@ import Venue from '@/components/Venue'
 import Sponsors from '@/components/Sponsors'
 import Tickets from '@/components/Tickets'
 import Footer from '@/components/Footer'
-import WipModal from '@/components/WipModal'
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <WipModal />
       <Navigation />
       <Hero />
       <About />
