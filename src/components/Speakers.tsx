@@ -84,7 +84,7 @@ export default function Speakers() {
         <div className="mt-16 bg-gradient-to-r from-google-blue to-blue-600 text-white p-8 rounded-2xl text-center">
           <h3 className="text-2xl font-bold mb-4">Ready to Join DevFest Annapolis 2025?</h3>
           <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-            Don't miss out on Maryland's premier developer conference. Register now for free and secure your spot!
+            Don&apos;t miss out on Maryland&apos;s premier developer conference. Register now for free and secure your spot!
           </p>
           <button
             onClick={() => window.open('https://gdg.community.dev/events/details/google-gdg-annapolis-presents-devfest-annapolis-2025/cohost-gdg-annapolis', '_blank')}

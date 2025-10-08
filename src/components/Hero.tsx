@@ -586,10 +586,10 @@ export default function Hero() {
   const [showOverlay, setShowOverlay] = useState(true)
   const [points, setPoints] = useState(0)
   const [joystickInput, setJoystickInput] = useState({ x: 0, y: 0 })
-  const [isVisible, setIsVisible] = useState(true)
+  // Removed unused visibility tracking state per lint warning
 
   useEffect(() => {
-    let isCleaningUp = false
+  const isCleaningUp = false
     
     const handleKeyDown = (e: KeyboardEvent) => {
       if (isCleaningUp) return
@@ -598,19 +598,9 @@ export default function Hero() {
       }
     }
 
-    // Intersection Observer to pause game when not visible
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (isCleaningUp) return
-        const entry = entries[0]
-        setIsVisible(entry.isIntersecting)
-      },
-      { threshold: 0.1 }
-    )
-
     // Double-tap detection for mobile with debouncing
     let lastTapTime = 0
-    let tapTimeout: NodeJS.Timeout | null = null
+    const tapTimeout: NodeJS.Timeout | null = null
     
     const handleTouchEnd = () => {
       if (isCleaningUp) return

@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from 'react'
+import Image from 'next/image'
 
 export default function Venue() {
   const mapRef = useRef<HTMLDivElement | null>(null)
@@ -95,10 +96,13 @@ export default function Venue() {
           <div className="space-y-6">
             {/* Main venue image */}
             <div className="devfest-card overflow-hidden">
-              <img 
-                src="/Drone3.jpg" 
-                alt="AACC CALT Building - Aerial View" 
+              <Image
+                src="/Drone3.jpg"
+                alt="AACC CALT Building - Aerial View"
+                width={1200}
+                height={600}
                 className="w-full h-64 object-cover"
+                priority={false}
               />
               <div className="p-6">
                 <h4 className="devfest-heading-3 mb-2">Modern Campus Facility</h4>
@@ -111,10 +115,13 @@ export default function Venue() {
 
             {/* Interior image */}
             <div className="devfest-card overflow-hidden">
-              <img 
-                src="/CALT-Building-2-Britney-Pieraldi2-900x506.jpg" 
-                alt="AACC CALT Building - Interior Atrium" 
+              <Image
+                src="/CALT-Building-2-Britney-Pieraldi2-900x506.jpg"
+                alt="AACC CALT Building - Interior Atrium"
+                width={1200}
+                height={600}
                 className="w-full h-48 object-cover"
+                priority={false}
               />
               <div className="p-6">
                 <h4 className="devfest-heading-3 mb-2">Collaborative Spaces</h4>
