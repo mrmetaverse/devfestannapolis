@@ -642,7 +642,7 @@ export default function Hero() {
       </div>
 
       {/* Info Icon */}
-      <div className="absolute top-8 right-8 z-50 pointer-events-auto">
+      <div className="absolute bottom-8 right-8 lg:bottom-32 z-50 pointer-events-auto">
         <button
           onClick={() => setShowInfoPanel(true)}
           className="glass-panel rounded-full p-3 hover:bg-white/20 transition-all duration-200 group"
