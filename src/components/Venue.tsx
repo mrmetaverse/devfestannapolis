@@ -1,6 +1,28 @@
-'use client'
+"use client"
+
+import { useEffect, useRef, useState } from 'react'
 
 export default function Venue() {
+  const mapRef = useRef<HTMLDivElement | null>(null)
+  const [mapVisible, setMapVisible] = useState(false)
+
+  useEffect(() => {
+    if (!mapRef.current || mapVisible) return
+    const el = mapRef.current
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setMapVisible(true)
+            observer.disconnect()
+          }
+        })
+      },
+      { root: null, rootMargin: '0px 0px -10% 0px', threshold: 0.25 }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [mapVisible])
   return (
     <section id="venue" className="py-20 bg-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -118,20 +140,41 @@ export default function Venue() {
           <h4 className="devfest-heading-3 text-center mb-6">Getting to AACC</h4>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
-              <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
-                <div className="text-center text-gray-600">
-                  <div className="text-lg font-semibold mb-2">Anne Arundel Community College</div>
-                  <div className="text-sm">CALT Building</div>
-                  <div className="text-sm">101 College Parkway</div>
-                  <div className="text-sm">Arnold, MD 21012</div>
-                  <div className="mt-4">
-                    <a href="https://maps.google.com/?q=Anne+Arundel+Community+College,+101+College+Parkway,+Arnold,+MD+21012" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       className="devfest-btn-secondary">
-                      Open in Google Maps
-                    </a>
+              <div ref={mapRef} className="relative aspect-video overflow-hidden rounded-lg shadow-sm group">
+                {/* Minimalist Google Map Embed (grayscale) */}
+                {mapVisible ? (
+                  <iframe
+                    title="Map showing location of Anne Arundel Community College"
+                    className="absolute inset-0 w-full h-full filter grayscale contrast-110 brightness-105 group-hover:grayscale-0 transition duration-700"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12393.807569236124!2d-76.52116826325663!3d39.05061478599836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7f9c7dea9619f%3A0x7396e4719d820190!2sAnne%20Arundel%20Community%20College!5e0!3m2!1sen!2sus!4v1759953869806!5m2!1sen!2sus"
+                    allowFullScreen
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center bg-gray-200 animate-pulse text-gray-500 text-sm tracking-wide">
+                    Loading map…
                   </div>
+                )}
+                {/* Subtle gradient overlay for readability */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/70 via-white/20 to-white/0 pointer-events-none" />
+                {/* Fallback / quick info chip */}
+                <div className="absolute bottom-4 left-4 bg-white/85 backdrop-blur-sm rounded-md px-4 py-2 shadow text-sm text-gray-800 flex flex-col">
+                  <span className="font-semibold">Anne Arundel Community College</span>
+                  <span>CALT Building</span>
+                  <span>101 College Parkway</span>
+                  <span>Arnold, MD 21012</span>
+                </div>
+                <div className="absolute bottom-4 right-4">
+                  <a
+                    href="https://maps.google.com/?q=Anne+Arundel+Community+College,+101+College+Parkway,+Arnold,+MD+21012"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center rounded-md bg-white/90 hover:bg-white text-gray-800 text-sm font-medium px-4 py-2 shadow focus:outline-none focus-visible:ring-4 focus-visible:ring-blue-500/40"
+                    aria-label="Open location in Google Maps"
+                  >
+                    Open in Google Maps ↗
+                  </a>
                 </div>
               </div>
             </div>
