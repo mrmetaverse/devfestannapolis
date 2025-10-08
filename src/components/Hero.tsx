@@ -683,20 +683,14 @@ export default function Hero() {
               Maryland&apos;s premier tech and innovation conference. Experience interactive learning, connect with industry leaders, and dive into the future of technology at Anne Arundel Community College.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+            <div className="flex justify-center items-center pt-4">
               <Link
                 href="https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="devfest-btn-primary pointer-events-auto"
               >
-                � Register Free
-              </Link>
-              <Link
-                href="#activities"
-                className="devfest-btn-secondary pointer-events-auto"
-              >
-                Explore Activities
+                Register Free
               </Link>
             </div>
 
