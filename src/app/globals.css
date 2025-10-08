@@ -1,183 +1,303 @@
 @import "tailwindcss";
 
-/* Google DevFest Color Palette */
+/* Google DevFest Design System */
 :root {
-  /* Primary Google Colors */
+  /* Official Google DevFest Color Palette */
   --google-blue: #4285F4;
-  --google-red: #EA4335;
-  --google-yellow: #FBBC04;
   --google-green: #34A853;
+  --google-yellow: #FBBC05;
+  --google-red: #EA4335;
   
-  /* DevFest Specific Colors */
-  --devfest-dark-blue: #1A73E8;
-  --devfest-light-blue: #E8F0FE;
-  --devfest-purple: #9C27B0;
-  --devfest-orange: #FF6D01;
+  /* Neutral Colors - Google DevFest Guidelines */
+  --devfest-ink: #202124;        /* Primary text */
+  --devfest-sub-ink: #5F6368;    /* Secondary text */
+  --devfest-lines: #E0E0E0;      /* Borders, dividers */
+  --devfest-surface: #FFFFFF;    /* Main surface */
+  --devfest-surface-alt: #F8F9FA; /* Alternative surface */
   
-  /* Neutral Colors */
-  --gray-900: #202124;
-  --gray-700: #5F6368;
-  --gray-500: #9AA0A6;
-  --gray-300: #DADCE0;
-  --gray-100: #F8F9FA;
-  --white: #FFFFFF;
-  
-  /* Background and Foreground */
-  --background: var(--white);
-  --foreground: var(--gray-900);
+  /* Interactive states */
+  --google-blue-hover: #1A73E8;
+  --google-blue-focus: rgba(66, 133, 244, 0.4);
+  --surface-hover: #F1F3F4;
 }
 
+/* Google DevFest Typography System */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-roboto), system-ui, -apple-system, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  min-height: 100dvh; /* Modern viewport height for mobile */
-  overflow-x: hidden;
+  font-family: var(--font-roboto), 'Roboto', system-ui, -apple-system, sans-serif;
+  color: var(--devfest-ink);
+  background: var(--devfest-surface);
+  line-height: 1.5;
+  font-weight: 400;
 }
 
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+/* Typography Scale - Google DevFest Guidelines */
+.devfest-display {
+  font-family: var(--font-roboto), 'Roboto', system-ui, sans-serif;
+  font-size: 3.5rem;   /* 56px */
+  line-height: 2.75rem; /* 44px */
+  font-weight: 900;
+  color: var(--devfest-ink);
 }
 
-/* DevFest Typography Classes */
 .devfest-heading-1 {
-  font-family: var(--font-open-sans), system-ui, sans-serif;
-  font-size: 2.25rem; /* 36px mobile */
+  font-family: var(--font-roboto), 'Roboto', system-ui, sans-serif;
+  font-size: 2.5rem;   /* 40px */
+  line-height: 2rem;   /* 32px */
   font-weight: 700;
-  line-height: 1.1;
-  color: var(--gray-900);
-}
-
-@media (min-width: 768px) {
-  .devfest-heading-1 {
-    font-size: 3.5rem; /* 56px desktop */
-  }
+  color: var(--devfest-ink);
 }
 
 .devfest-heading-2 {
-  font-family: var(--font-open-sans), system-ui, sans-serif;
-  font-size: 1.875rem; /* 30px mobile */
-  font-weight: 600;
-  line-height: 1.2;
-  color: var(--gray-900);
-}
-
-@media (min-width: 768px) {
-  .devfest-heading-2 {
-    font-size: 2.5rem; /* 40px desktop */
-  }
+  font-family: var(--font-roboto), 'Roboto', system-ui, sans-serif;
+  font-size: 2rem;     /* 32px */
+  line-height: 1.75rem; /* 28px */
+  font-weight: 700;
+  color: var(--devfest-ink);
 }
 
 .devfest-heading-3 {
-  font-family: var(--font-open-sans), system-ui, sans-serif;
-  font-size: 1.5rem; /* 24px mobile */
-  font-weight: 600;
-  line-height: 1.3;
-  color: var(--gray-900);
-}
-
-@media (min-width: 768px) {
-  .devfest-heading-3 {
-    font-size: 1.875rem; /* 30px desktop */
-  }
+  font-family: var(--font-roboto), 'Roboto', system-ui, sans-serif;
+  font-size: 1.5rem;   /* 24px */
+  line-height: 1.25rem; /* 20px */
+  font-weight: 500;
+  color: var(--devfest-ink);
 }
 
 .devfest-body {
-  font-family: var(--font-roboto), system-ui, sans-serif;
-  font-size: 0.875rem; /* 14px mobile */
+  font-family: var(--font-roboto), 'Roboto', system-ui, sans-serif;
+  font-size: 1rem;     /* 16px */
+  line-height: 1.5;    /* 1.5 line-height */
   font-weight: 400;
-  line-height: 1.6;
-  color: var(--gray-700);
+  color: var(--devfest-sub-ink);
 }
 
-@media (min-width: 768px) {
-  .devfest-body {
-    font-size: 1rem; /* 16px desktop */
+.devfest-caption {
+  font-family: var(--font-roboto), 'Roboto', system-ui, sans-serif;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.4;
+  font-weight: 400;
+  color: var(--devfest-sub-ink);
+}
+
+.devfest-code {
+  font-family: var(--font-roboto-mono), 'Roboto Mono', monospace;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+/* Mobile Typography Scale */
+@media (max-width: 768px) {
+  .devfest-display {
+    font-size: 2.75rem; /* 44px */
+    line-height: 2.25rem; /* 36px */
+  }
+  
+  .devfest-heading-1 {
+    font-size: 2rem;     /* 32px */
+    line-height: 1.75rem; /* 28px */
+  }
+  
+  .devfest-heading-2 {
+    font-size: 1.75rem;  /* 28px */
+    line-height: 1.5rem; /* 24px */
+  }
+  
+  .devfest-heading-3 {
+    font-size: 1.375rem; /* 22px */
+    line-height: 1.125rem; /* 18px */
   }
 }
-
-.devfest-body-large {
-  font-family: var(--font-roboto), system-ui, sans-serif;
-  font-size: 1rem; /* 16px mobile */
-  font-weight: 400;
-  line-height: 1.6;
-  color: var(--gray-700);
-}
-
-@media (min-width: 768px) {
-  .devfest-body-large {
-    font-size: 1.125rem; /* 18px desktop */
-  }
-}
-
-/* DevFest Button Styles */
+/* Google DevFest Button System */
 .devfest-btn-primary {
   background: var(--google-blue);
-  color: var(--white);
+  color: var(--devfest-surface);
   padding: 12px 24px;
   border-radius: 8px;
-  font-family: var(--font-roboto), system-ui, sans-serif;
+  font-family: var(--font-roboto), 'Roboto', system-ui, sans-serif;
   font-weight: 500;
+  font-size: 1rem;
   border: none;
+  cursor: pointer;
   transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
 }
 
 .devfest-btn-primary:hover {
-  background: var(--devfest-dark-blue);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+  background: var(--google-blue-hover);
+}
+
+.devfest-btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--google-blue-focus);
 }
 
 .devfest-btn-secondary {
   background: transparent;
-  color: var(--google-blue);
+  color: var(--devfest-ink);
   padding: 12px 24px;
   border-radius: 8px;
-  font-family: var(--font-roboto), system-ui, sans-serif;
+  font-family: var(--font-roboto), 'Roboto', system-ui, sans-serif;
   font-weight: 500;
-  border: 2px solid var(--google-blue);
+  font-size: 1rem;
+  border: 1px solid var(--devfest-lines);
+  cursor: pointer;
   transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
 }
 
 .devfest-btn-secondary:hover {
-  background: var(--devfest-light-blue);
-  transform: translateY(-1px);
+  background: var(--surface-hover);
 }
 
-/* DevFest Card Styles */
+/* Google DevFest Card System */
 .devfest-card {
-  background: var(--white);
+  background: var(--devfest-surface);
+  border: 1px solid var(--devfest-lines);
   border-radius: 12px;
+  padding: 24px;
+  transition: all 0.2s ease;
+}
+
+.devfest-card-interactive {
+  background: var(--devfest-surface);
+  border: 1px solid var(--devfest-lines);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.devfest-card-interactive:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid var(--gray-300);
-  transition: all 0.3s ease;
 }
 
-.devfest-card:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
+/* DevFest Spacing System - 4pt grid */
+.devfest-space-4 { margin: 4px; }
+.devfest-space-8 { margin: 8px; }
+.devfest-space-12 { margin: 12px; }
+.devfest-space-16 { margin: 16px; }
+.devfest-space-20 { margin: 20px; }
+.devfest-space-24 { margin: 24px; }
+.devfest-space-32 { margin: 32px; }
+.devfest-space-40 { margin: 40px; }
+.devfest-space-48 { margin: 48px; }
+.devfest-space-64 { margin: 64px; }
+
+/* Section Padding - DevFest Guidelines */
+.devfest-section {
+  padding: 64px 0;
 }
 
-/* Google Color Utility Classes */
+@media (max-width: 1024px) {
+  .devfest-section {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .devfest-section {
+    padding: 24px 0;
+  }
+  
+  .devfest-card {
+    padding: 16px;
+  }
+}
+
+/* Google DevFest Color Utility Classes */
 .bg-google-blue { background-color: var(--google-blue); }
-.bg-google-red { background-color: var(--google-red); }
-.bg-google-yellow { background-color: var(--google-yellow); }
 .bg-google-green { background-color: var(--google-green); }
-.bg-devfest-purple { background-color: var(--devfest-purple); }
-.bg-devfest-orange { background-color: var(--devfest-orange); }
+.bg-google-yellow { background-color: var(--google-yellow); }
+.bg-google-red { background-color: var(--google-red); }
+.bg-devfest-surface { background-color: var(--devfest-surface); }
+.bg-devfest-surface-alt { background-color: var(--devfest-surface-alt); }
 
 .text-google-blue { color: var(--google-blue); }
-.text-google-red { color: var(--google-red); }
-.text-google-yellow { color: var(--google-yellow); }
 .text-google-green { color: var(--google-green); }
-.text-devfest-purple { color: var(--devfest-purple); }
-.text-devfest-orange { color: var(--devfest-orange); }
+.text-google-yellow { color: var(--google-yellow); }
+.text-google-red { color: var(--google-red); }
+.text-devfest-ink { color: var(--devfest-ink); }
+.text-devfest-sub-ink { color: var(--devfest-sub-ink); }
+
+.border-devfest-lines { border-color: var(--devfest-lines); }
+
+/* DevFest Link Styles */
+.devfest-link {
+  color: var(--google-blue);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.devfest-link:hover {
+  text-decoration: underline;
+}
+
+.devfest-link:visited {
+  color: #1A73E8;
+}
+
+/* DevFest Navigation Styles */
+.devfest-nav-item {
+  color: var(--devfest-ink);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.devfest-nav-item:hover {
+  background: var(--surface-hover);
+}
+
+.devfest-nav-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 8px;
+  right: 8px;
+  height: 2px;
+  background: var(--google-blue);
+}
+
+/* DevFest Chips/Tags */
+.devfest-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.devfest-chip-blue {
+  background: rgba(66, 133, 244, 0.12);
+  color: #1A73E8;
+}
+
+.devfest-chip-green {
+  background: rgba(52, 168, 83, 0.12);
+  color: #137333;
+}
+
+.devfest-chip-yellow {
+  background: rgba(251, 188, 5, 0.12);
+  color: #B06000;
+}
+
+.devfest-chip-red {
+  background: rgba(234, 67, 53, 0.12);
+  color: #C5221F;
+}
 
 @layer utilities {
   .animate-marquee {

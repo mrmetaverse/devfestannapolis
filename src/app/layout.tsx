@@ -1,26 +1,21 @@
-import type { Metadata, Viewport } from 'next'
-import { Roboto, Open_Sans } from 'next/font/google'
+import type { Metadata } from 'next'
+import { Roboto, Roboto_Mono } from 'next/font/google'
 import './globals.css'
 
+// Google Sans fallback to Roboto as per DevFest guidelines
 const roboto = Roboto({ 
   subsets: ['latin'],
-  weight: ['300', '400', '500', '700'],
+  weight: ['400', '500', '700', '900'],
   variable: '--font-roboto',
   display: 'swap',
 })
 
-const openSans = Open_Sans({ 
+const robotoMono = Roboto_Mono({ 
   subsets: ['latin'],
-  variable: '--font-open-sans',
+  weight: ['400', '500'],
+  variable: '--font-roboto-mono',
   display: 'swap',
 })
-
-export const viewport: Viewport = {
-  width: 'device-width',
-  initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
-}
 
 export const metadata: Metadata = {
   title: 'Annapolis DevFest 2025 | Tech & Innovation Conference',
@@ -41,7 +36,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${roboto.variable} ${openSans.variable} font-roboto`}>{children}</body>
+      <body className={`${roboto.variable} ${robotoMono.variable} font-roboto`}>{children}</body>
     </html>
   )
 }

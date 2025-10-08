@@ -643,33 +643,37 @@ export default function Hero() {
         <VirtualJoystick onMove={setJoystickInput} />
       </div>
 
-      {/* Glass Overlay Panel */}
-      <div className={`absolute inset-0 z-40 pointer-events-none flex items-center justify-center p-4 md:p-8 transition-all duration-500 ${
+      {/* Glass Overlay Panel - DevFest Design */}
+      <div className={`absolute inset-0 z-40 pointer-events-none flex items-center justify-center p-6 lg:p-8 transition-all duration-500 ${
         showOverlay ? 'opacity-100' : 'opacity-0 pointer-events-none'
       }`}>
-        <div className="glass-panel rounded-2xl md:rounded-3xl p-6 md:p-12 max-w-6xl w-full mx-2 md:mx-0">
-          <div className="space-y-4 md:space-y-6 text-center">
-            <div className="inline-block glass-panel rounded-full px-4 py-2">
-              <p className="text-sm font-mono text-black/80 tracking-wider">
-                November 15, 2025 | 10:00 AM – 5:00 PM (EST)
-              </p>
+        <div className="glass-panel rounded-2xl p-8 lg:p-12 max-w-5xl w-full">
+          <div className="text-center space-y-6">
+            {/* Event Date Chip */}
+            <div className="inline-flex items-center devfest-chip devfest-chip-blue">
+              <span className="devfest-caption font-medium">November 15, 2025 • 10:00 AM – 5:00 PM EST</span>
             </div>
 
-            <div className="devfest-body text-google-blue mb-2 font-medium">
+            {/* DevFest Branding */}
+            <div className="devfest-body text-devfest-sub-ink">
               GDG Annapolis presents
             </div>
 
-            <h1 className="devfest-heading-1 text-balance leading-tight mb-6">
-              <span className="text-google-blue">DevFest Annapolis</span>
+            {/* Big Friendly Headline - DevFest Style */}
+            <h1 className="devfest-display font-bold text-balance leading-tight">
+              <span className="text-google-blue">DevFest</span>{' '}
+              <span className="text-devfest-ink">Annapolis</span>
               <br />
-              <span className="text-gray-700">2025</span>
+              <span className="text-google-green">2025</span>
             </h1>
 
-            <p className="devfest-body-large text-gray-700 max-w-3xl mx-auto leading-relaxed mb-8">
-              Maryland&apos;s premier tech and innovation conference. Experience interactive learning, connect with industry leaders, and dive into the future of technology at Anne Arundel Community College.
+            {/* Body Copy ≤70ch - DevFest Guidelines */}
+            <p className="devfest-body text-devfest-sub-ink max-w-2xl mx-auto leading-relaxed">
+              Maryland&apos;s premier developer conference. Join us for tech talks, hands-on workshops, and AI clinics at Anne Arundel Community College.
             </p>
 
-            <div className="flex justify-center items-center pt-4">
+            {/* Primary & Secondary CTAs - DevFest Style */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
               <Link
                 href="https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909"
                 target="_blank"
@@ -678,38 +682,44 @@ export default function Hero() {
               >
                 Register Free
               </Link>
+              <Link
+                href="#venue"
+                className="devfest-btn-secondary pointer-events-auto"
+              >
+                View Venue
+              </Link>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 max-w-lg mx-auto pt-6">
-              <div className="glass-panel rounded-xl p-4">
-                <div className="text-2xl md:text-3xl font-bold text-google-blue mb-1">500+</div>
-                <div className="text-gray-600 text-sm">Developers</div>
+            {/* Stats with DevFest Colors */}
+            <div className="grid grid-cols-3 gap-4 max-w-md mx-auto pt-8">
+              <div className="devfest-card p-4 text-center">
+                <div className="devfest-heading-2 text-google-blue mb-1">500+</div>
+                <div className="devfest-caption text-devfest-sub-ink">Developers</div>
               </div>
-              <div className="glass-panel rounded-xl p-4">
-                <div className="text-2xl md:text-3xl font-bold text-google-red mb-1">20+</div>
-                <div className="text-gray-600 text-sm">Sessions</div>
+              <div className="devfest-card p-4 text-center">
+                <div className="devfest-heading-2 text-google-red mb-1">20+</div>
+                <div className="devfest-caption text-devfest-sub-ink">Sessions</div>
               </div>
-              <div className="glass-panel rounded-xl p-4">
-                <div className="text-2xl md:text-3xl font-bold text-google-green mb-1">8hrs</div>
-                <div className="text-gray-600 text-sm">Learning</div>
+              <div className="devfest-card p-4 text-center">
+                <div className="devfest-heading-2 text-google-green mb-1">8hrs</div>
+                <div className="devfest-caption text-devfest-sub-ink">Learning</div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Venue Preview */}
-        <div className="absolute bottom-8 right-8 hidden lg:block pointer-events-auto">
+        {/* Venue Preview Card */}
+        <div className="absolute bottom-8 right-8 hidden xl:block pointer-events-auto">
           <div className="devfest-card p-4 max-w-xs">
             <img 
               src="/dronemaxresdefault.jpg" 
               alt="AACC Campus" 
               className="w-full h-20 object-cover rounded-lg mb-3"
             />
-            <div className="text-sm">
-              <p className="font-semibold text-gray-900">Event Venue</p>
-              <p className="text-gray-600">AACC CALT Building</p>
-              <p className="text-google-blue text-xs">Arnold, MD</p>
+            <div>
+              <p className="devfest-body font-medium text-devfest-ink">Event Venue</p>
+              <p className="devfest-caption text-devfest-sub-ink">AACC CALT Building</p>
+              <p className="devfest-caption text-google-blue">Arnold, MD</p>
             </div>
           </div>
         </div>
