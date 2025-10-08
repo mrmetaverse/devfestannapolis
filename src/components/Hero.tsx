@@ -594,8 +594,26 @@ export default function Hero() {
       }
     }
 
+    // Double-tap detection for mobile
+    let lastTapTime = 0
+    const handleTouchEnd = () => {
+      const currentTime = new Date().getTime()
+      const tapLength = currentTime - lastTapTime
+      
+      if (tapLength < 500 && tapLength > 0) {
+        // Double tap detected
+        setShowOverlay(prev => !prev)
+      }
+      lastTapTime = currentTime
+    }
+
     window.addEventListener('keydown', handleKeyDown)
-    return () => window.removeEventListener('keydown', handleKeyDown)
+    window.addEventListener('touchend', handleTouchEnd)
+    
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown)
+      window.removeEventListener('touchend', handleTouchEnd)
+    }
   }, [])
 
   return (
@@ -618,7 +636,7 @@ export default function Hero() {
 
       {/* Simple Score Display */}
       <div className="absolute top-24 left-8 z-10 pointer-events-none">
-        <div className="text-red-500 text-6xl font-bold font-mono">
+        <div className="text-red-500 text-3xl md:text-6xl font-bold font-mono">
           {points.toString().padStart(6, '0')}
         </div>
       </div>
@@ -717,10 +735,17 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Hint Text */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 pointer-events-none">
+      {/* Hint Text - Desktop */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 pointer-events-none hidden md:block">
         <p className="text-sm text-white/80 font-mono tracking-wider animate-pulse drop-shadow-lg">
           USE WASD KEYS TO CONTROL THE BALL • PRESS H TO HIDE/SHOW UI
+        </p>
+      </div>
+
+      {/* Hint Text - Mobile */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 pointer-events-none block md:hidden">
+        <p className="text-sm text-white/80 font-mono tracking-wider animate-pulse drop-shadow-lg">
+          USE JOYSTICK TO CONTROL THE BALL • DOUBLE TAP TO HIDE/SHOW UI
         </p>
       </div>
 
