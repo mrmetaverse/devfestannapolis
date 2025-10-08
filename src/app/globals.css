@@ -360,6 +360,12 @@ body {
   .pause-animation {
     animation-play-state: paused;
   }
+
+  /* Pause marquee when user hovers or focuses within the scrolling region (accessibility) */
+  .marquee-wrapper:hover .animate-marquee,
+  .marquee-wrapper:focus-within .animate-marquee {
+    animation-play-state: paused;
+  }
   
   .glass-panel {
     background: rgba(255, 255, 255, 0.1);

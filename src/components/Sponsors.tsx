@@ -1,57 +1,64 @@
 'use client'
 
+import Image from 'next/image'
+
 interface Sponsor {
   name: string
   type: 'sponsor' | 'partner'
+  image?: string // path relative to /public
+  width?: number
+  height?: number
 }
 
 // Placeholder sponsors and partners - will be updated with real logos
 const sponsors: Sponsor[] = [
-  { name: "Google", type: "sponsor" },
-  { name: "Sponsor Two", type: "sponsor" },
-  { name: "Sponsor Three", type: "sponsor" },
-  { name: "Sponsor Four", type: "sponsor" },
-  { name: "Sponsor Five", type: "sponsor" },
-  { name: "Sponsor Six", type: "sponsor" },
+  { name: 'Google', type: 'sponsor', image: '/sponsors/google.png', width: 200, height: 64 },
+  { name: 'Virgent AI', type: 'sponsor', image: '/sponsors/virgentai.png', width: 320, height: 120 },
+  // Placeholders (no image yet)
+  { name: 'Sponsor Three', type: 'sponsor' },
+  { name: 'Sponsor Four', type: 'sponsor' },
+  { name: 'Sponsor Five', type: 'sponsor' },
+  { name: 'Sponsor Six', type: 'sponsor' },
 ]
 
 const partners: Sponsor[] = [
-  { name: "Partner One", type: "partner" },
-  { name: "Partner Two", type: "partner" },
-  { name: "Partner Three", type: "partner" },
-  { name: "Partner Four", type: "partner" },
-  { name: "Partner Five", type: "partner" },
-  { name: "Partner Six", type: "partner" },
+  { name: 'Virgent AI', type: 'partner', image: '/partners/virgentai.png', width: 320, height: 120 },
+  { name: 'Partner Two', type: 'partner' },
+  { name: 'Partner Three', type: 'partner' },
+  { name: 'Partner Four', type: 'partner' },
+  { name: 'Partner Five', type: 'partner' },
+  { name: 'Partner Six', type: 'partner' },
 ]
 
-function LogoPlaceholder({ name, type }: { name: string, type: 'sponsor' | 'partner' }) {
-  const bgColor = type === 'sponsor' ? 'from-blue-500 to-indigo-600' : 'from-green-500 to-emerald-600'
-  
+function LogoItem({ name, type, image, width = 160, height = 64 }: { name: string, type: 'sponsor' | 'partner', image?: string, width?: number, height?: number }) {
+  const gradient = type === 'sponsor' ? 'from-blue-500 to-indigo-600' : 'from-green-500 to-emerald-600'
+  const initials = name.split(' ').map(w => w[0]).join('').slice(0,4)
   return (
-    <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center justify-center h-24">
-      <div className={`w-16 h-16 bg-gradient-to-br ${bgColor} rounded-lg flex items-center justify-center`}>
-        <span className="text-white font-bold text-sm">
-          {name.split(' ').map(word => word[0]).join('')}
-        </span>
-      </div>
-      <div className="ml-4">
-        <div className="font-semibold text-gray-900">{name}</div>
-        <div className="text-sm text-gray-500 capitalize">{type}</div>
-      </div>
+    <div className="flex items-center justify-center h-24 w-56">
+      {image ? (
+        <Image
+          src={image}
+          alt={`${name} logo`}
+          width={width}
+          height={height}
+          className="object-contain max-h-20 w-auto opacity-90 hover:opacity-100 transition-opacity"
+          priority={false}
+        />
+      ) : (
+        <div className={`w-20 h-20 bg-gradient-to-br ${gradient} rounded-lg flex items-center justify-center text-white font-bold text-lg tracking-wide`}>{initials}</div>
+      )}
     </div>
   )
 }
 
 function InfiniteScroll({ items, type }: { items: Sponsor[], type: 'sponsor' | 'partner' }) {
-  // Duplicate items for seamless infinite scroll
   const duplicatedItems = [...items, ...items]
-  
   return (
-    <div className="overflow-hidden">
-      <div className="flex gap-6 animate-marquee hover:pause-animation">
+    <div className="overflow-hidden py-4">
+      <div className="flex gap-16 animate-marquee hover:pause-animation">
         {duplicatedItems.map((item, index) => (
-          <div key={`${item.name}-${index}`} className="flex-shrink-0 w-72">
-            <LogoPlaceholder name={item.name} type={type} />
+          <div key={`${item.name}-${index}`} className="flex-shrink-0">
+            <LogoItem name={item.name} type={type} image={item.image} width={item.width} height={item.height} />
           </div>
         ))}
       </div>
@@ -71,7 +78,7 @@ export default function Sponsors() {
           </p>
         </div>
         
-        <div className="mb-20">
+        <div className="mb-12 marquee-wrapper" tabIndex={0} aria-label="Sponsor logos scrolling. Focus to pause.">
           <InfiniteScroll items={sponsors} type="sponsor" />
         </div>
 
@@ -83,7 +90,7 @@ export default function Sponsors() {
           </p>
         </div>
         
-        <div className="mb-12">
+        <div className="mb-12 marquee-wrapper" tabIndex={0} aria-label="Partner logos scrolling. Focus to pause.">
           <InfiniteScroll items={partners} type="partner" />
         </div>
 

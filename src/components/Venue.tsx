@@ -36,9 +36,11 @@ export default function Venue() {
               
               <button
                 onClick={() => window.open('https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909', '_blank')}
-                className="devfest-btn-secondary bg-white text-google-blue border-white hover:bg-blue-50 cursor-pointer mt-4"
+                className="mt-6 inline-flex items-center gap-2 rounded-lg bg-white/95 text-google-blue font-bold px-6 py-4 border border-white/80 shadow-sm hover:bg-white hover:shadow-md focus:outline-none focus-visible:ring-4 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-blue-600 transition text-base"
+                aria-label="Get your DevFest tickets on Eventbrite"
               >
-                🎟️ Get Your Tickets Now
+                <span>🎟️</span>
+                <span>Get Your Tickets Now</span>
               </button>
             </div>
           </div>
