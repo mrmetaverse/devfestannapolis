@@ -32,47 +32,88 @@ body {
   color: var(--foreground);
   font-family: var(--font-roboto), system-ui, -apple-system, sans-serif;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-height: 100dvh; /* Modern viewport height for mobile */
+  overflow-x: hidden;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 /* DevFest Typography Classes */
 .devfest-heading-1 {
   font-family: var(--font-open-sans), system-ui, sans-serif;
-  font-size: 3.5rem;
+  font-size: 2.25rem; /* 36px mobile */
   font-weight: 700;
   line-height: 1.1;
   color: var(--gray-900);
 }
 
+@media (min-width: 768px) {
+  .devfest-heading-1 {
+    font-size: 3.5rem; /* 56px desktop */
+  }
+}
+
 .devfest-heading-2 {
   font-family: var(--font-open-sans), system-ui, sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.875rem; /* 30px mobile */
   font-weight: 600;
   line-height: 1.2;
   color: var(--gray-900);
 }
 
+@media (min-width: 768px) {
+  .devfest-heading-2 {
+    font-size: 2.5rem; /* 40px desktop */
+  }
+}
+
 .devfest-heading-3 {
   font-family: var(--font-open-sans), system-ui, sans-serif;
-  font-size: 1.875rem;
+  font-size: 1.5rem; /* 24px mobile */
   font-weight: 600;
   line-height: 1.3;
   color: var(--gray-900);
 }
 
+@media (min-width: 768px) {
+  .devfest-heading-3 {
+    font-size: 1.875rem; /* 30px desktop */
+  }
+}
+
 .devfest-body {
   font-family: var(--font-roboto), system-ui, sans-serif;
-  font-size: 1rem;
+  font-size: 0.875rem; /* 14px mobile */
   font-weight: 400;
   line-height: 1.6;
   color: var(--gray-700);
 }
 
+@media (min-width: 768px) {
+  .devfest-body {
+    font-size: 1rem; /* 16px desktop */
+  }
+}
+
 .devfest-body-large {
   font-family: var(--font-roboto), system-ui, sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem; /* 16px mobile */
   font-weight: 400;
   line-height: 1.6;
   color: var(--gray-700);
+}
+
+@media (min-width: 768px) {
+  .devfest-body-large {
+    font-size: 1.125rem; /* 18px desktop */
+  }
 }
 
 /* DevFest Button Styles */

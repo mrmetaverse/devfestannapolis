@@ -644,11 +644,11 @@ export default function Hero() {
       </div>
 
       {/* Glass Overlay Panel */}
-      <div className={`absolute inset-0 z-40 pointer-events-none flex items-center justify-center p-8 transition-all duration-500 ${
+      <div className={`absolute inset-0 z-40 pointer-events-none flex items-center justify-center p-4 md:p-8 transition-all duration-500 ${
         showOverlay ? 'opacity-100' : 'opacity-0 pointer-events-none'
       }`}>
-        <div className="glass-panel rounded-3xl p-8 md:p-12 max-w-6xl w-full">
-          <div className="space-y-6 text-center">
+        <div className="glass-panel rounded-2xl md:rounded-3xl p-6 md:p-12 max-w-6xl w-full mx-2 md:mx-0">
+          <div className="space-y-4 md:space-y-6 text-center">
             <div className="inline-block glass-panel rounded-full px-4 py-2">
               <p className="text-sm font-mono text-black/80 tracking-wider">
                 November 15, 2025 | 10:00 AM – 5:00 PM (EST)
