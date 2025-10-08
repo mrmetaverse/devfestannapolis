@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: 'Annapolis DevFest 2025 | Tech & Innovation Conference',
   description: 'Join Annapolis DevFest 2025 for tech talks, coding labs, and AI clinics. Free event at AACC. Learn, connect, and build the future.',
   keywords: 'DevFest, Annapolis, Maryland, tech conference, AI, Google, cloud, developers, innovation, AACC, Anne Arundel County, East Coast, coding labs, small business',
+  viewport: 'width=device-width, initial-scale=1',
   openGraph: {
     title: 'Annapolis DevFest 2025 | Tech & Innovation Conference',
     description: 'Join Annapolis DevFest 2025 for tech talks, coding labs, and AI clinics. Free event at AACC - November 15, 2025',
