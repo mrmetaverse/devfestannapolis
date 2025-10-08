@@ -398,13 +398,16 @@ function RollingBall({ onRutChange, onPointsChange, joystickInput, points }: {
   useFrame((state, delta) => {
     if (!meshRef.current) return
 
+    // Limit frame processing to avoid freezes
+    const clampedDelta = Math.min(delta, 0.1) // Cap at 10fps minimum
+    const frameRate = Math.min(clampedDelta * 60, 3) // Cap frame rate compensation
+
     // Calculate ball scaling (6% larger every 100 points)
     const scaleMultiplier = 1 + (Math.floor(points / 100) * 0.06)
 
     const ball = ballState.current
-    const frameRate = Math.min(delta * 60, 2) // Cap frame rate compensation
     
-    // WASD and joystick movement - smoother
+    // WASD and joystick movement - smoother with capped frame rate
     const moveForce = 0.004 * frameRate
     
     // Keyboard controls
@@ -417,18 +420,18 @@ function RollingBall({ onRutChange, onPointsChange, joystickInput, points }: {
     ball.velocity[0] += joystickInput.x * moveForce * 2 // X-axis (left/right)
     ball.velocity[2] += joystickInput.y * moveForce * 2 // Y-axis (forward/back)
     
-    // Apply friction - frame rate independent
-    const friction = Math.pow(0.98, frameRate)
+    // Apply friction - frame rate independent with safety checks
+    const friction = Math.pow(0.98, Math.min(frameRate, 2))
     ball.velocity[0] *= friction
     ball.velocity[2] *= friction
     
-    // Gravity - frame rate independent
-    ball.velocity[1] -= 0.015 * frameRate
+    // Gravity - frame rate independent with safety check
+    ball.velocity[1] -= 0.015 * Math.min(frameRate, 2)
     
-    // Update position
-    ball.position[0] += ball.velocity[0] * frameRate
+    // Update position with bounds checking
+    ball.position[0] = Math.max(-50, Math.min(50, ball.position[0] + ball.velocity[0] * frameRate))
     ball.position[1] += ball.velocity[1] * frameRate
-    ball.position[2] += ball.velocity[2] * frameRate
+    ball.position[2] = Math.max(-50, Math.min(50, ball.position[2] + ball.velocity[2] * frameRate))
     
     // Optimized collision detection with scaling
     const baseRadius = 2
@@ -583,19 +586,41 @@ export default function Hero() {
   const [showOverlay, setShowOverlay] = useState(true)
   const [points, setPoints] = useState(0)
   const [joystickInput, setJoystickInput] = useState({ x: 0, y: 0 })
+  const [isVisible, setIsVisible] = useState(true)
 
   useEffect(() => {
+    let isCleaningUp = false
+    
     const handleKeyDown = (e: KeyboardEvent) => {
+      if (isCleaningUp) return
       if (e.key.toLowerCase() === 'h') {
         setShowOverlay(prev => !prev)
       }
     }
 
-    // Double-tap detection for mobile
+    // Intersection Observer to pause game when not visible
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (isCleaningUp) return
+        const entry = entries[0]
+        setIsVisible(entry.isIntersecting)
+      },
+      { threshold: 0.1 }
+    )
+
+    // Double-tap detection for mobile with debouncing
     let lastTapTime = 0
+    let tapTimeout: NodeJS.Timeout | null = null
+    
     const handleTouchEnd = () => {
+      if (isCleaningUp) return
+      
       const currentTime = new Date().getTime()
       const tapLength = currentTime - lastTapTime
+      
+      if (tapTimeout) {
+        clearTimeout(tapTimeout)
+      }
       
       if (tapLength < 500 && tapLength > 0) {
         // Double tap detected
@@ -614,7 +639,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-screen overflow-hidden bg-gradient-to-b from-sky-400 to-sky-200" data-hero>
       {/* Three.js Scene */}
       <div className="absolute inset-0">
         <Canvas 
@@ -624,8 +649,17 @@ export default function Hero() {
             near: 0.1,
             far: 500
           }} 
-          gl={{ antialias: false, alpha: false }}
-          frameloop="always"
+          gl={{ 
+            antialias: false, 
+            alpha: false,
+            powerPreference: "high-performance",
+            preserveDrawingBuffer: false
+          }}
+          frameloop="demand"
+          performance={{ min: 0.5 }}
+          onCreated={({ gl }) => {
+            gl.setClearColor('#87CEEB', 1)
+          }}
         >
           <Scene points={points} setPoints={setPoints} joystickInput={joystickInput} />
         </Canvas>
