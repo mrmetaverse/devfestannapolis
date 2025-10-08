@@ -8,7 +8,7 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
-    { href: '#activities', label: 'Activities' },
+    { href: '#about', label: 'Activities' },
     { href: '#venue', label: 'Venue' },
     { href: '#community', label: 'Community' },
   ]
@@ -18,9 +18,9 @@ export default function Navigation() {
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo - Left aligned per DevFest guidelines */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="devfest-heading-3 text-google-blue">Annapolis</div>
-            <div className="devfest-heading-3 text-devfest-ink">DevFest</div>
+          <Link href="/" className="flex items-center space-x-1 sm:space-x-2">
+           <div className="devfest-heading-3 text-devfest-ink text-lg sm:text-xl lg:text-2xl">DevFest</div>
+            <div className="devfest-heading-3 text-google-blue text-lg sm:text-xl lg:text-2xl">Annapolis</div>
           </Link>
 
           {/* Desktop Navigation - Right aligned */}
@@ -34,14 +34,6 @@ export default function Navigation() {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href="https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="devfest-btn-primary ml-4"
-            >
-              Register Free
-            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -70,17 +62,6 @@ export default function Navigation() {
                   {item.label}
                 </Link>
               ))}
-              <div className="pt-4 px-4">
-                <Link
-                  href="https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="devfest-btn-primary w-full justify-center"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Register Free
-                </Link>
-              </div>
             </div>
           </div>
         )}

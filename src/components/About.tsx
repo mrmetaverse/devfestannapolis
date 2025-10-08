@@ -2,7 +2,7 @@
 
 export default function About() {
   return (
-    <section className="devfest-section bg-devfest-surface-alt">
+    <section id="about" className="devfest-section bg-devfest-surface-alt">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* What to Expect Section */}
         <div className="text-center mb-16">

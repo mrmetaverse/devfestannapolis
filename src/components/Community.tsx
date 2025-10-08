@@ -2,7 +2,7 @@ import { MessageCircle, Users, Calendar, Code } from 'lucide-react'
 
 export default function Community() {
   return (
-    <section className="py-20 bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-700 text-white">
+    <section id="community" className="py-20 bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-700 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Join Our Community</h2>
