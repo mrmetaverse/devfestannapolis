@@ -617,7 +617,7 @@ export default function Hero() {
       </div>
 
       {/* Simple Score Display */}
-      <div className="absolute top-24 left-8 z-50 pointer-events-none">
+      <div className="absolute top-24 left-8 z-10 pointer-events-none">
         <div className="text-red-500 text-6xl font-bold font-mono">
           {points.toString().padStart(6, '0')}
         </div>
@@ -640,7 +640,7 @@ export default function Hero() {
       </div>
 
       {/* Glass Overlay Panel */}
-      <div className={`absolute inset-0 pointer-events-none flex items-center justify-center p-8 transition-all duration-500 ${
+      <div className={`absolute inset-0 z-40 pointer-events-none flex items-center justify-center p-8 transition-all duration-500 ${
         showOverlay ? 'opacity-100' : 'opacity-0 pointer-events-none'
       }`}>
         <div className="glass-panel rounded-3xl p-8 md:p-12 max-w-6xl w-full">
