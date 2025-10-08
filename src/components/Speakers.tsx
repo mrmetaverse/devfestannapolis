@@ -78,11 +78,19 @@ export default function Speakers() {
               Apply to Speak
             </a>
           </div>
+        </div>
+        
+        {/* Full-width CTA Bar */}
+        <div className="mt-16 bg-gradient-to-r from-google-blue to-blue-600 text-white p-8 rounded-2xl text-center">
+          <h3 className="text-2xl font-bold mb-4">Ready to Join DevFest Annapolis 2025?</h3>
+          <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
+            Don't miss out on Maryland's premier developer conference. Register now for free and secure your spot!
+          </p>
           <button
-            onClick={() => window.open('https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909', '_blank')}
-            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-bold cursor-pointer transition-colors duration-200"
+            onClick={() => window.open('https://gdg.community.dev/events/details/google-gdg-annapolis-presents-devfest-annapolis-2025/cohost-gdg-annapolis', '_blank')}
+            className="bg-white text-google-blue px-12 py-4 rounded-full text-xl font-bold hover:bg-gray-100 cursor-pointer transition-all duration-200 transform hover:scale-105 shadow-lg"
           >
-            Get Your Tickets Now
+            🎟️ Get Your Free Tickets Now
           </button>
         </div>
       </div>

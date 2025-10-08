@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowLeft, MessageCircle } from 'lucide-react'
+import { ArrowLeft, MessageCircle, Users } from 'lucide-react'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -165,16 +165,25 @@ export default function CommunityPage() {
               <MessageCircle className="w-16 h-16 text-blue-600 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Community Chat</h3>
               <p className="text-gray-700 mb-6">
-                Connect with fellow developers, get event updates, ask questions, and be part of our growing community.
+                Join our planning committee discussions and connect with organizers, speakers, and fellow community members.
               </p>
+              <div className="bg-blue-50 rounded-lg p-6 mb-6 text-left">
+                <h4 className="font-bold text-gray-900 mb-3">How to Join Our Matrix Community:</h4>
+                <ol className="list-decimal list-inside space-y-2 text-gray-700">
+                  <li>Create a Matrix account at <a href="https://matrix.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">matrix.org</a></li>
+                  <li>Contact our organizers via <a href="https://www.linkedin.com/company/gdg-annapolis/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">LinkedIn</a> or email</li>
+                  <li>Request access to our planning committee channel</li>
+                  <li>Get involved in organizing DevFest Annapolis 2025!</li>
+                </ol>
+              </div>
               <a
-                href="https://matrix.to/#/#devfestannapolis:matrix.org"
+                href="https://www.linkedin.com/company/gdg-annapolis/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all duration-200 transform hover:scale-105"
               >
-                <MessageCircle className="w-5 h-5 mr-2" />
-                Join Our Community
+                <Users className="w-5 h-5 mr-2" />
+                Contact Us on LinkedIn
               </a>
             </div>
           </div>
@@ -198,19 +207,18 @@ export default function CommunityPage() {
                 1
               </div>
               <div className="flex-grow">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Click to Join</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Contact Our Team</h3>
                 <p className="text-gray-700 mb-6">
-                  Click the link below to join our community chat space. You can create an account if you don&apos;t have one, 
-                  or sign in with an existing account.
+                  First, reach out to our organizing team via LinkedIn or email to request access to our planning committee discussions.
                 </p>
                 <a
-                  href="https://matrix.to/#/#devfestannapolis:matrix.org"
+                  href="https://www.linkedin.com/company/gdg-annapolis/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-all duration-200 transform hover:scale-105"
                 >
-                  <MessageCircle className="w-6 h-6 mr-2" />
-                  Join DevFest Community
+                  <Users className="w-6 h-6 mr-2" />
+                  Contact via LinkedIn
                 </a>
               </div>
             </div>
@@ -260,13 +268,13 @@ export default function CommunityPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://matrix.to/#/#devfestannapolis:matrix.org"
+              href="https://www.linkedin.com/company/gdg-annapolis/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-yellow-400 text-blue-900 px-8 py-4 rounded-full text-lg font-bold hover:bg-yellow-300 transition-all duration-200 transform hover:scale-105"
             >
-              <MessageCircle className="w-6 h-6 mr-2" />
-              Join Community Chat
+              <Users className="w-6 h-6 mr-2" />
+              Connect with Our Team
             </a>
             <Link
               href="/"

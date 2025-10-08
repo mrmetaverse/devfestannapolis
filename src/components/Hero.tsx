@@ -655,7 +655,7 @@ export default function Hero() {
             powerPreference: "high-performance",
             preserveDrawingBuffer: false
           }}
-          frameloop="demand"
+          frameloop="always"
           performance={{ min: 0.5 }}
           onCreated={({ gl }) => {
             gl.setClearColor('#87CEEB', 1)
@@ -684,8 +684,8 @@ export default function Hero() {
         <div className="glass-panel rounded-2xl p-8 lg:p-12 max-w-5xl w-full">
           <div className="text-center space-y-6">
             {/* Event Date Chip */}
-            <div className="inline-flex items-center devfest-chip devfest-chip-blue">
-              <span className="devfest-caption font-medium">November 15, 2025 • 10:00 AM – 5:00 PM EST</span>
+            <div className="inline-flex items-center devfest-chip devfest-chip-red">
+              <span className="devfest-caption font-medium text-red-500">November 15, 2025 • 10:00 AM – 5:00 PM EST</span>
             </div>
 
             {/* DevFest Branding */}
@@ -709,7 +709,7 @@ export default function Hero() {
             {/* Primary & Secondary CTAs - DevFest Style */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
               <Link
-                href="https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909"
+                href="https://gdg.community.dev/events/details/google-gdg-annapolis-presents-devfest-annapolis-2025/cohost-gdg-annapolis"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="devfest-btn-primary pointer-events-auto"

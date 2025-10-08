@@ -18,7 +18,7 @@ export default function Footer() {
           
           <div className="mb-8">
             <button
-              onClick={() => window.open('https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909', '_blank')}
+              onClick={() => window.open('https://gdg.community.dev/events/details/google-gdg-annapolis-presents-devfest-annapolis-2025/cohost-gdg-annapolis', '_blank')}
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-colors duration-200 cursor-pointer"
             >
               Get Your Tickets Now
@@ -34,6 +34,9 @@ export default function Footer() {
             <div className="flex space-x-6">
               <Link href="/community" className="text-gray-400 hover:text-white transition-colors duration-200">
                 Community
+              </Link>
+              <Link href="https://www.linkedin.com/company/gdg-annapolis/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
+                LinkedIn
               </Link>
               <Link href="https://github.com/mrmetaverse/devfestannapolis" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
                 GitHub

@@ -50,20 +50,20 @@ export default function About() {
           <h2 className="devfest-heading-2 text-devfest-ink mb-12">Event Details</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-google-blue text-white devfest-card">
-              <h3 className="devfest-heading-3 mb-4">📍 Date & Location</h3>
-              <p className="devfest-body mb-2">November 15, 2025</p>
-              <p className="devfest-body mb-2">Anne Arundel Community College</p>
-              <p className="devfest-body mb-2">CALT Building</p>
-              <p className="devfest-caption text-white/80">Free Parking Available</p>
+            <div className="bg-google-blue text-white devfest-card border-4 border-white shadow-xl">
+              <h3 className="devfest-heading-3 mb-4 text-white font-bold">📍 Date & Location</h3>
+              <p className="devfest-body mb-2 text-white font-semibold">November 15, 2025</p>
+              <p className="devfest-body mb-2 text-white font-semibold">Anne Arundel Community College</p>
+              <p className="devfest-body mb-2 text-white font-semibold">CALT Building</p>
+              <p className="devfest-caption text-blue-100 font-medium">Free Parking Available</p>
             </div>
             
-            <div className="bg-google-green text-white devfest-card">
-              <h3 className="devfest-heading-3 mb-4">🎟️ Free Registration</h3>
-              <p className="devfest-body mb-6">Admission is free, but space is limited</p>
+            <div className="bg-google-green text-white devfest-card border-4 border-white shadow-xl">
+              <h3 className="devfest-heading-3 mb-4 text-white font-bold">🎟️ Free Registration</h3>
+              <p className="devfest-body mb-6 text-white font-semibold">Admission is free, but space is limited</p>
               <button
-                onClick={() => window.open('https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909', '_blank')}
-                className="devfest-btn-secondary bg-white text-google-green border-white hover:bg-gray-100 cursor-pointer"
+                onClick={() => window.open('https://gdg.community.dev/events/details/google-gdg-annapolis-presents-devfest-annapolis-2025/cohost-gdg-annapolis', '_blank')}
+                className="devfest-btn-secondary bg-white text-google-green border-white hover:bg-gray-100 cursor-pointer font-bold"
               >
                 Get Your Free Ticket
               </button>

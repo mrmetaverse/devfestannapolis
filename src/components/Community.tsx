@@ -25,13 +25,13 @@ export default function Community() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="https://matrix.to/#/#devfestannapolis:matrix.org"
+                  href="https://www.linkedin.com/company/gdg-annapolis/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center bg-yellow-400 text-purple-900 px-6 py-3 rounded-full font-bold hover:bg-yellow-300 transition-all duration-200 transform hover:scale-105"
+                  className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-500 transition-all duration-200 transform hover:scale-105"
                 >
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  Join Our Chat
+                  <Users className="w-5 h-5 mr-2" />
+                  Follow on LinkedIn
                 </a>
                 <a
                   href="/community"
