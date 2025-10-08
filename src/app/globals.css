@@ -103,6 +103,12 @@ body {
   color: var(--devfest-sub-ink);
 }
 
+/* Caption highlight variants */
+.devfest-caption--highlight-red {
+  color: #dc2626 !important; /* tailwind red-600 */
+  font-weight: 600;
+}
+
 .devfest-code {
   font-family: var(--font-roboto-mono), 'Roboto Mono', monospace;
   font-size: 0.875rem;

@@ -50,23 +50,37 @@ export default function About() {
           <h2 className="devfest-heading-2 text-devfest-ink mb-12">Event Details</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-google-blue text-white devfest-card border-4 border-white shadow-xl">
-              <h3 className="devfest-heading-3 mb-4 text-white font-bold">📍 Date & Location</h3>
-              <p className="devfest-body mb-2 text-white font-semibold">November 15, 2025</p>
-              <p className="devfest-body mb-2 text-white font-semibold">Anne Arundel Community College</p>
-              <p className="devfest-body mb-2 text-white font-semibold">CALT Building</p>
-              <p className="devfest-caption text-blue-100 font-medium">Free Parking Available</p>
+            {/* Date & Location Card - improved contrast with darker gradient & backdrop */}
+            <div className="relative overflow-hidden devfest-card border border-white/40 shadow-xl bg-gradient-to-br from-blue-600 via-blue-600 to-blue-700">
+              <div className="absolute inset-0 backdrop-blur-sm bg-blue-700/20" aria-hidden="true" />
+              <div className="relative text-left">
+                <h3 className="devfest-heading-3 mb-4 text-white font-bold flex items-center gap-2">
+                  <span aria-hidden="true">📍</span>
+                  <span>Date & Location</span>
+                </h3>
+                <p className="devfest-body mb-2 text-white font-semibold drop-shadow-sm">November 15, 2025</p>
+                <p className="devfest-body mb-2 text-blue-50 font-semibold drop-shadow-sm">Anne Arundel Community College</p>
+                <p className="devfest-body mb-2 text-blue-50 font-semibold drop-shadow-sm">CALT Building</p>
+                <p className="devfest-caption text-blue-100 font-medium">Free Parking Available</p>
+              </div>
             </div>
-            
-            <div className="bg-google-green text-white devfest-card border-4 border-white shadow-xl">
-              <h3 className="devfest-heading-3 mb-4 text-white font-bold">🎟️ Free Registration</h3>
-              <p className="devfest-body mb-6 text-white font-semibold">Admission is free, but space is limited</p>
-              <button
-                onClick={() => window.open('https://gdg.community.dev/events/details/google-gdg-annapolis-presents-devfest-annapolis-2025/cohost-gdg-annapolis', '_blank')}
-                className="devfest-btn-secondary bg-white text-google-green border-white hover:bg-gray-100 cursor-pointer font-bold"
-              >
-                Get Your Free Ticket
-              </button>
+
+            {/* Registration Card - improved contrast */}
+            <div className="relative overflow-hidden devfest-card border border-white/40 shadow-xl bg-gradient-to-br from-green-600 via-green-600 to-green-700">
+              <div className="absolute inset-0 backdrop-blur-sm bg-green-800/10" aria-hidden="true" />
+              <div className="relative text-left">
+                <h3 className="devfest-heading-3 mb-4 text-white font-bold flex items-center gap-2">
+                  <span aria-hidden="true">🎟️</span>
+                  <span>Free Registration</span>
+                </h3>
+                <p className="devfest-body mb-6 text-green-50 font-semibold drop-shadow-sm">Admission is free, but space is limited</p>
+                <button
+                  onClick={() => window.open('https://gdg.community.dev/events/details/google-gdg-annapolis-presents-devfest-annapolis-2025/cohost-gdg-annapolis', '_blank')}
+                  className="devfest-btn-secondary bg-white/95 text-green-700 border-white/60 hover:bg-white cursor-pointer font-bold focus:outline-none focus-visible:ring-4 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-green-700 transition"
+                >
+                  Get Your Free Ticket
+                </button>
+              </div>
             </div>
           </div>
         </div>

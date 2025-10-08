@@ -685,24 +685,25 @@ export default function Hero() {
           <div className="text-center space-y-6">
             {/* Event Date Chip */}
             <div className="inline-flex items-center devfest-chip devfest-chip-red">
-              <span className="devfest-caption font-medium text-red-500">November 15, 2025 • 10:00 AM – 5:00 PM EST</span>
+              {/* Highlighted red date/time */}
+              <span className="devfest-caption devfest-caption--highlight-red font-bold">November 15, 2025 • 10:00 AM – 5:00 PM EST</span>
             </div>
 
             {/* DevFest Branding */}
-            <div className="devfest-body text-devfest-sub-ink">
+            <div className="devfest-body text-gray-800 font-semibold">
               GDG Annapolis presents
             </div>
 
             {/* Big Friendly Headline - DevFest Style */}
             <h1 className="devfest-display font-bold text-balance leading-tight">
               <span className="text-google-blue">DevFest</span>{' '}
-              <span className="text-devfest-ink">Annapolis</span>
+              <span className="text-gray-900">Annapolis</span>
               <br />
               <span className="text-google-green">2025</span>
             </h1>
 
             {/* Body Copy ≤70ch - DevFest Guidelines */}
-            <p className="devfest-body text-devfest-sub-ink max-w-2xl mx-auto leading-relaxed">
+            <p className="devfest-body text-gray-800 max-w-2xl mx-auto leading-relaxed font-semibold">
               Maryland&apos;s premier developer conference. Join us for tech talks, hands-on workshops, and AI clinics at Anne Arundel Community College.
             </p>
 
