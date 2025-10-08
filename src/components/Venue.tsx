@@ -5,6 +5,31 @@ import { useEffect, useRef, useState } from 'react'
 export default function Venue() {
   const mapRef = useRef<HTMLDivElement | null>(null)
   const [mapVisible, setMapVisible] = useState(false)
+  const [copied, setCopied] = useState(false)
+
+  const addressText = 'Anne Arundel Community College, CALT Building, 101 College Parkway, Arnold, MD 21012'
+
+  const handleCopyAddress = async () => {
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(addressText)
+      } else {
+        // Fallback: create temporary textarea
+        const textarea = document.createElement('textarea')
+        textarea.value = addressText
+        textarea.style.position = 'fixed'
+        textarea.style.left = '-9999px'
+        document.body.appendChild(textarea)
+        textarea.select()
+        document.execCommand('copy')
+        document.body.removeChild(textarea)
+      }
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2500)
+    } catch (e) {
+      console.error('Copy failed', e)
+    }
+  }
 
   useEffect(() => {
     if (!mapRef.current || mapVisible) return
@@ -159,22 +184,32 @@ export default function Venue() {
                 {/* Subtle gradient overlay for readability */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-white/70 via-white/20 to-white/0 pointer-events-none" />
                 {/* Fallback / quick info chip */}
-                <div className="absolute bottom-4 left-4 bg-white/85 backdrop-blur-sm rounded-md px-4 py-2 shadow text-sm text-gray-800 flex flex-col">
-                  <span className="font-semibold">Anne Arundel Community College</span>
-                  <span>CALT Building</span>
-                  <span>101 College Parkway</span>
-                  <span>Arnold, MD 21012</span>
-                </div>
-                <div className="absolute bottom-4 right-4">
-                  <a
-                    href="https://maps.google.com/?q=Anne+Arundel+Community+College,+101+College+Parkway,+Arnold,+MD+21012"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center rounded-md bg-white/90 hover:bg-white text-gray-800 text-sm font-medium px-4 py-2 shadow focus:outline-none focus-visible:ring-4 focus-visible:ring-blue-500/40"
-                    aria-label="Open location in Google Maps"
-                  >
-                    Open in Google Maps ↗
-                  </a>
+                <div className="absolute bottom-4 left-4 flex flex-col gap-3">
+                  <div className="bg-white/85 backdrop-blur-sm rounded-md px-4 py-2 shadow text-sm text-gray-800 flex flex-col">
+                    <span className="font-semibold">Anne Arundel Community College</span>
+                    <span>CALT Building</span>
+                    <span>101 College Parkway</span>
+                    <span>Arnold, MD 21012</span>
+                  </div>
+                  <div className="flex gap-3">
+                    <button
+                      type="button"
+                      onClick={handleCopyAddress}
+                      className="inline-flex items-center rounded-md bg-white/90 hover:bg-white text-gray-800 text-xs font-medium px-3 py-2 shadow focus:outline-none focus-visible:ring-4 focus-visible:ring-blue-500/40 transition"
+                      aria-live="polite"
+                    >
+                      {copied ? 'Copied!' : 'Copy Address'}
+                    </button>
+                    <a
+                      href="https://maps.google.com/?q=Anne+Arundel+Community+College,+101+College+Parkway,+Arnold,+MD+21012"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center rounded-md bg-white/90 hover:bg-white text-gray-800 text-xs font-medium px-3 py-2 shadow focus:outline-none focus-visible:ring-4 focus-visible:ring-blue-500/40"
+                      aria-label="Open location in Google Maps"
+                    >
+                      Google Maps ↗
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
