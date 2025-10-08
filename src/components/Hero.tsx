@@ -4,9 +4,7 @@ import React from "react"
 import Link from 'next/link'
 import { Canvas, useFrame } from "@react-three/fiber"
 import { useRef, useState, useEffect } from "react"
-import { Info } from "lucide-react"
 import * as THREE from "three"
-import InfoPanel from "./InfoPanel"
 
 function VirtualJoystick({ onMove }: { onMove: (input: { x: number; y: number }) => void }) {
   const [isDragging, setIsDragging] = useState(false)
@@ -583,7 +581,6 @@ function Scene({ points, setPoints, joystickInput }: {
 
 export default function Hero() {
   const [showOverlay, setShowOverlay] = useState(true)
-  const [showInfoPanel, setShowInfoPanel] = useState(false)
   const [points, setPoints] = useState(0)
   const [joystickInput, setJoystickInput] = useState({ x: 0, y: 0 })
 
@@ -639,17 +636,6 @@ export default function Hero() {
         <div className="text-red-500 text-3xl md:text-6xl font-bold font-mono">
           {points.toString().padStart(6, '0')}
         </div>
-      </div>
-
-      {/* Info Icon */}
-      <div className="absolute bottom-8 right-8 lg:bottom-32 z-50 pointer-events-auto">
-        <button
-          onClick={() => setShowInfoPanel(true)}
-          className="glass-panel rounded-full p-3 hover:bg-white/20 transition-all duration-200 group"
-          aria-label="Event Information"
-        >
-          <Info className="w-6 h-6 text-black/70 group-hover:text-black transition-colors duration-200" />
-        </button>
       </div>
 
       {/* Virtual Joystick for Mobile */}
@@ -743,11 +729,6 @@ export default function Hero() {
         </p>
       </div>
 
-      {/* Info Panel */}
-      <InfoPanel 
-        isOpen={showInfoPanel} 
-        onClose={() => setShowInfoPanel(false)} 
-      />
     </div>
   )
 }
