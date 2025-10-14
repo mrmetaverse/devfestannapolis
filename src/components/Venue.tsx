@@ -83,9 +83,9 @@ export default function Venue() {
               <p className="text-blue-200 mb-4">Full day of tech talks, workshops, and networking</p>
               
               <button
-                onClick={() => window.open('https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909', '_blank')}
+                onClick={() => window.open('https://gdg.community.dev/events/details/google-gdg-annapolis-presents-devfest-annapolis-2025/cohost-gdg-annapolis', '_blank')}
                 className="mt-6 inline-flex items-center gap-2 rounded-lg bg-white/95 text-google-blue font-bold px-6 py-4 border border-white/80 shadow-sm hover:bg-white hover:shadow-md focus:outline-none focus-visible:ring-4 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-blue-600 transition text-base"
-                aria-label="Get your DevFest tickets on Eventbrite"
+                aria-label="Get your DevFest tickets on Bevy"
               >
                 <span>🎟️</span>
                 <span>Get Your Tickets Now</span>

@@ -21,10 +21,10 @@ export default function Tickets() {
               Includes all activities, food, swag, and networking opportunities
             </div>
             <button 
-              onClick={() => window.open('https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909', '_blank')}
+              onClick={() => window.open('https://gdg.community.dev/events/details/google-gdg-annapolis-presents-devfest-annapolis-2025/cohost-gdg-annapolis', '_blank')}
               className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 px-8 rounded-full text-lg font-bold transition-colors duration-200 mb-4"
             >
-              🎫 Register Free on Eventbrite
+              🎫 Register Free on Bevy
             </button>
             <div className="text-sm text-gray-500">
               Registration is quick and free - reserve your place at Annapolis DevFest 2025

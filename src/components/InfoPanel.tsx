@@ -38,10 +38,10 @@ export default function InfoPanel({ isOpen, onClose }: InfoPanelProps) {
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Registration is Now Open!</h3>
                 <p className="text-gray-600 text-sm">
-                  Registration is available through <strong>Eventbrite</strong>. Space is limited, so get your free ticket today!
+                  Registration is available through <strong>Bevy</strong>. Space is limited, so get your free ticket today!
                 </p>
                 <button
-                  onClick={() => window.open('https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909', '_blank')}
+                  onClick={() => window.open('https://gdg.community.dev/events/details/google-gdg-annapolis-presents-devfest-annapolis-2025/cohost-gdg-annapolis', '_blank')}
                   className="mt-2 bg-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-green-700 transition-colors duration-200"
                 >
                   Get Your Free Ticket

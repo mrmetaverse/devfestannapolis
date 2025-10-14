@@ -14,17 +14,18 @@ interface Sponsor {
 const sponsors: Sponsor[] = [
   { name: 'Google', type: 'sponsor', image: '/sponsors/google.png', width: 200, height: 64 },
   { name: 'Virgent AI', type: 'sponsor', image: '/sponsors/virgentai.png', width: 320, height: 120 },
+  { name: 'MLof Strategies', type: 'sponsor', image: '/sponsors/MLoS.png', width: 280, height: 100 },
+  { name: 'ShannonAI', type: 'sponsor', image: '/sponsors/shannoai.jpeg', width: 280, height: 100 },
   // Placeholders (no image yet)
-  { name: 'Sponsor Three', type: 'sponsor' },
-  { name: 'Sponsor Four', type: 'sponsor' },
   { name: 'Sponsor Five', type: 'sponsor' },
   { name: 'Sponsor Six', type: 'sponsor' },
 ]
 
 const partners: Sponsor[] = [
   { name: 'Virgent AI', type: 'partner', image: '/partners/virgentai.png', width: 320, height: 120 },
-  { name: 'Partner Two', type: 'partner' },
-  { name: 'Partner Three', type: 'partner' },
+  { name: 'MLof Strategies', type: 'partner', image: '/partners/MLoS.png', width: 280, height: 100 },
+  { name: 'ShannonAI', type: 'partner', image: '/partners/shannoai.jpeg', width: 280, height: 100 },
+  // Placeholders (no image yet)
   { name: 'Partner Four', type: 'partner' },
   { name: 'Partner Five', type: 'partner' },
   { name: 'Partner Six', type: 'partner' },

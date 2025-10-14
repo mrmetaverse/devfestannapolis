@@ -27,7 +27,7 @@ export default function Hackathon() {
           </div>
 
           <a
-            href="https://www.eventbrite.com/e/annapols-devfest-2025-tickets-1766314396909"
+            href="https://gdg.community.dev/events/details/google-gdg-annapolis-presents-devfest-annapolis-2025/cohost-gdg-annapolis"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-yellow-400 text-purple-900 px-8 py-4 rounded-full text-lg font-bold hover:bg-yellow-300 transition-all duration-200 transform hover:scale-105"
