@@ -16,19 +16,14 @@ const sponsors: Sponsor[] = [
   { name: 'Virgent AI', type: 'sponsor', image: '/sponsors/virgentai.png', width: 320, height: 120 },
   { name: 'MLof Strategies', type: 'sponsor', image: '/sponsors/MLoS.png', width: 280, height: 100 },
   { name: 'ShannonAI', type: 'sponsor', image: '/sponsors/shannoai.jpeg', width: 280, height: 100 },
-  // Placeholders (no image yet)
-  { name: 'Sponsor Five', type: 'sponsor' },
-  { name: 'Sponsor Six', type: 'sponsor' },
+  { name: 'AbleSpark', type: 'sponsor', image: '/sponsors/ablespark.png', width: 280, height: 100 },
 ]
 
 const partners: Sponsor[] = [
   { name: 'Virgent AI', type: 'partner', image: '/partners/virgentai.png', width: 320, height: 120 },
   { name: 'MLof Strategies', type: 'partner', image: '/partners/MLoS.png', width: 280, height: 100 },
   { name: 'ShannonAI', type: 'partner', image: '/partners/shannoai.jpeg', width: 280, height: 100 },
-  // Placeholders (no image yet)
-  { name: 'Partner Four', type: 'partner' },
-  { name: 'Partner Five', type: 'partner' },
-  { name: 'Partner Six', type: 'partner' },
+  { name: 'AbleSpark', type: 'partner', image: '/partners/ablespark.png', width: 280, height: 100 },
 ]
 
 function LogoItem({ name, type, image, width = 160, height = 64 }: { name: string, type: 'sponsor' | 'partner', image?: string, width?: number, height?: number }) {
