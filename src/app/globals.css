@@ -17,6 +17,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Fix scroll offset for fixed header navigation */
+section[id] {
+  scroll-margin-top: 140px; /* Account for header height + padding */
+}
+
 /* Fix iOS viewport units */
 @supports (-webkit-touch-callout: none) {
   .h-screen {
