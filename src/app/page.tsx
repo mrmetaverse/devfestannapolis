@@ -1,17 +1,24 @@
 'use client'
 
+// Force dynamic rendering - recompile on every request
+export const dynamic = 'force-dynamic'
+
 import { useState } from 'react'
 import { Info } from 'lucide-react'
 import Navigation from '@/components/Navigation'
 import Hero from '@/components/Hero'
+import WhatToExpect from '@/components/WhatToExpect'
+import OurMission from '@/components/OurMission'
+import WhyAttend from '@/components/WhyAttend'
+import EventVenue from '@/components/EventVenue'
+import GetInvolvedNew from '@/components/GetInvolvedNew'
+import SpeakersNew from '@/components/SpeakersNew'
+import BuildFutureAI from '@/components/BuildFutureAI'
+import SponsorsPartnersNew from '@/components/SponsorsPartnersNew'
+import ReadyToJoin from '@/components/ReadyToJoin'
 import About from '@/components/About'
-import Speakers from '@/components/Speakers'
 import GetInvolved from '@/components/GetInvolved'
-import Hackathon from '@/components/Hackathon'
-import Community from '@/components/Community'
-import Schedule from '@/components/Schedule'
 import Venue from '@/components/Venue'
-import Sponsors from '@/components/Sponsors'
 import Tickets from '@/components/Tickets'
 import Footer from '@/components/Footer'
 import InfoPanel from '@/components/InfoPanel'
@@ -21,17 +28,16 @@ export default function Home() {
 
   return (
     <main className="min-h-screen relative">
+      <ReadyToJoin />
       <Navigation />
-      <Hero />
-      <About />
-      <Speakers />
-      <GetInvolved />
-      <Hackathon />
-      <Community />
-      <Schedule />
-      <Venue />
-      <Sponsors />
-      <Tickets />
+      <WhatToExpect />
+      <WhyAttend />
+      <EventVenue />
+      <SpeakersNew />
+      <GetInvolvedNew />
+      <BuildFutureAI />
+      <SponsorsPartnersNew />
+      <OurMission />
       <Footer />
 
       {/* Fixed Info Icon - Global */}
