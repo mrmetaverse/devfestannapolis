@@ -66,7 +66,7 @@ export default function BuildFutureAI() {
               <p className="text-lg text-gray-700 leading-relaxed">
                 Are you ready to build a futuristic solution capable of optimizing a repeatable business process? 
                 At the DevFest Annapolis 2025 Agentic AI Challenge, you can form a team and spend the day bringing 
-                your innovative solution to life! We'll dive deep into the emerging world of Agentic AI - intelligent 
+                your innovative solution to life! We&apos;ll dive deep into the emerging world of Agentic AI - intelligent 
                 systems that act, adapt, communicate, and solve complex real-world challenges autonomously.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">

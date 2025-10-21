@@ -19,7 +19,7 @@ const involvement = [
   },
   {
     title: "Volunteer",
-    description: "Be part of DevFest Annapolis 25's success; join our volunteer community.",
+    description: "Be part of DevFest Annapolis 25&apos;s success; join our volunteer community.",
     action: "Join Community",
     href: "https://forms.gle/cCes2WUpKPheFHZu7"
   }

@@ -10,8 +10,8 @@ export default function WhatToExpect() {
           </h2>
           
           <p className="text-lg text-gray-700 text-center max-w-4xl mx-auto mb-12 leading-relaxed">
-            Technology isn't just about code, it's about people, ideas, and building the future together. 
-            Whether you're a developer, small business owner, or student, you'll leave with new knowledge, 
+            Technology isn&apos;t just about code, it&apos;s about people, ideas, and building the future together. 
+            Whether you&apos;re a developer, small business owner, or student, you&apos;ll leave with new knowledge, 
             new connections, and new opportunities.
           </p>
           
@@ -25,7 +25,7 @@ export default function WhatToExpect() {
             <div className="bg-green-50 rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
               <div className="text-3xl mb-4">🛠️</div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Code Labs</h3>
-              <p className="text-gray-700 leading-relaxed">Interactive hands-on coding sessions where you'll build real projects and learn new skills.</p>
+              <p className="text-gray-700 leading-relaxed">Interactive hands-on coding sessions where you&apos;ll build real projects and learn new skills.</p>
             </div>
             <div className="bg-green-50 rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
               <div className="text-3xl mb-4">💼</div>

@@ -30,8 +30,8 @@ export default function GetInvolvedNew() {
               Calling Speakers, Demos, and Robotics
             </h3>
             <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              Share your experiences, knowledge, and creations with Maryland's tech community. 
-              We're looking for speakers on AI, cloud technologies, web development, mobile apps, 
+              Share your experiences, knowledge, and creations with Maryland&apos;s tech community. 
+              We&apos;re looking for speakers on AI, cloud technologies, web development, mobile apps, 
               and emerging tech trends, Demos, & Robotics.
             </p>
           </div>
@@ -83,7 +83,7 @@ export default function GetInvolvedNew() {
             <div className="bg-yellow-50 rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
               <div className="text-3xl mb-4">🙋‍♀️</div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Volunteer</h3>
-              <p className="text-gray-700 mb-6 leading-relaxed">Be part of DevFest Annapolis 25's success; join our volunteer community.</p>
+              <p className="text-gray-700 mb-6 leading-relaxed">Be part of DevFest Annapolis 25&apos;s success; join our volunteer community.</p>
               <Link
                 href="https://forms.gle/cCes2WUpKPheFHZu7"
                 target="_blank"
