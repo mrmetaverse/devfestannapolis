@@ -16,7 +16,7 @@ export default function ReadyToJoin() {
     { title: "Hands-on Experience", description: "Interactive workshops and labs" },
     { title: "AI Innovation", description: "Cutting-edge AI talks and hackathon" },
     { title: "Free Everything", description: "Food, swag, and learning materials" },
-    { title: "Local Community", description: "Build Maryland's tech ecosystem" }
+    { title: "Local Community", description: "Build Maryland&apos;s tech ecosystem" }
   ]
 
   return (
@@ -29,7 +29,7 @@ export default function ReadyToJoin() {
           </h2>
           
           <p className="text-xl text-gray-700 text-center max-w-3xl mx-auto mb-12">
-            Don't miss Maryland's premier developer conference. Register now and be part of 
+            Don&apos;t miss Maryland&apos;s premier developer conference. Register now and be part of 
             an amazing community-driven tech event!
           </p>
 

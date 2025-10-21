@@ -36,7 +36,7 @@ export default function WhyAttend() {
           
           <p className="text-lg text-gray-700 text-center max-w-4xl mx-auto mb-12 leading-relaxed">
             DevFest is a global movement, with events hosted by Google Developer Groups around the world. 
-            Annapolis DevFest 2025 is our Maryland chapter's contribution to this tradition, building bridges 
+            Annapolis DevFest 2025 is our Maryland chapter&apos;s contribution to this tradition, building bridges 
             between developers, entrepreneurs, and the wider tech ecosystem.
           </p>
           
@@ -61,7 +61,7 @@ export default function WhyAttend() {
               <div className="bg-yellow-50 rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
                 <div className="text-3xl mb-4">🎓</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Students</h3>
-                <p className="text-gray-700 leading-relaxed">Explore tech careers and opportunities in Maryland's growing technology sector.</p>
+                <p className="text-gray-700 leading-relaxed">Explore tech careers and opportunities in Maryland&apos;s growing technology sector.</p>
               </div>
               <div className="bg-yellow-50 rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
                 <div className="text-3xl mb-4">👔</div>
