@@ -21,7 +21,7 @@ export default function OurMission() {
             Building Tech Community in Maryland
           </p>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mt-6 leading-relaxed">
-            We believe in fostering innovation, collaboration, and growth within Maryland's tech ecosystem. 
+            We believe in fostering innovation, collaboration, and growth within Maryland&apos;s tech ecosystem. 
             DevFest Annapolis brings together developers, designers, and tech enthusiasts to learn, share, 
             and build the future together.
           </p>
