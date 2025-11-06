@@ -8,6 +8,16 @@ const nextConfig: NextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
   
+  // Webpack configuration for file watching in VMs (Vagrant)
+  webpack: (config, { dev }) => {
+    if (dev) {
+      config.watchOptions = {
+        poll: 1000, // Check for changes every second
+        aggregateTimeout: 300,
+      };
+    }
+    return config;
+  },
   
   // Compiler optimizations
   compiler: {
