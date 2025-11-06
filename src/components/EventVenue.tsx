@@ -115,25 +115,43 @@ export default function EventVenue() {
           <div className="mt-12 pt-8 border-t border-gray-200">
             <h4 className="text-2xl font-bold text-gray-900 text-center mb-8">Getting There</h4>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-blue-50 rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
-                <div className="text-3xl mb-4">🚗</div>
-                <h5 className="text-2xl font-bold text-gray-900 mb-4">By Car</h5>
-                <p className="text-gray-700 leading-relaxed">
-                  Take I-97 to Exit 7 (Riva Road). Free parking available on campus.
-                </p>
+              <div className="bg-blue-50 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                <div className="text-3xl mb-4 text-center">🚗</div>
+                <h5 className="text-2xl font-bold text-gray-900 mb-4 text-center">By Car</h5>
+                <div className="text-gray-700 leading-relaxed space-y-3 text-left">
+                  <p>
+                    Our venue is at Anne Arundel Community College — CALT Building (Center for Applied Learning & Technology), located at <strong>101 College Parkway, Arnold, MD 21012</strong>.
+                  </p>
+                  <p>
+                    <strong>From Annapolis/Washington region:</strong><br />
+                    Take US 50 East to Exit 27, then follow MD 2 North for about 3 miles. Turn right onto Peninsula Farm Road, then continue straight to the CALT Building lot.
+                  </p>
+                  <p>
+                    <strong>From Baltimore area:</strong><br />
+                    Take I-695 South to Exit 2 for MD 10 South toward Severna Park. When MD 10 ends, merge onto MD 2 South and continue about 5 miles. Turn left onto Peninsula Farm Road, then continue straight to the CALT Building lot.
+                  </p>
+                </div>
               </div>
-              <div className="bg-blue-50 rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
-                <div className="text-3xl mb-4">🚌</div>
-                <h5 className="text-2xl font-bold text-gray-900 mb-4">Public Transit</h5>
-                <p className="text-gray-700 leading-relaxed">
-                  Anne Arundel County Transit Route 14 serves the campus.
-                </p>
+              <div className="bg-blue-50 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                <div className="text-3xl mb-4 text-center">🚌</div>
+                <h5 className="text-2xl font-bold text-gray-900 mb-4 text-center">Public Transit</h5>
+                <div className="text-gray-700 leading-relaxed text-left space-y-3">
+                  <p>
+                    The campus is accessible via the Anne Arundel County Transit 203 (Gold Line) with a stop at Ring Rd & West Campus Dr (AACC)—a short 3-minute walk to the CALT Building. For broader regional access, the MTA LocalLink 70 bus also serves the campus.
+                  </p>
+                  <p>
+                    For route maps, schedules, and real-time updates, visit <a href="https://www.aacounty.org/transportation/transit" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">aacounty.org/transportation/transit</a> or download the Passio GO app.
+                  </p>
+                </div>
               </div>
-              <div className="bg-blue-50 rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
-                <div className="text-3xl mb-4">✈️</div>
-                <h5 className="text-2xl font-bold text-gray-900 mb-4">Flying In</h5>
-                <p className="text-gray-700 leading-relaxed">
-                  BWI Airport is 20 minutes away. DCA and IAD are about 45 minutes.
+              <div className="bg-blue-50 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                <div className="text-3xl mb-4 text-center">✈️</div>
+                <h5 className="text-2xl font-bold text-gray-900 mb-4 text-center">Flying In</h5>
+                <p className="text-gray-700 leading-relaxed mb-4 text-left">
+                  The closest major airport is Baltimore/Washington International (BWI) — approximately 17 miles / 24 minutes drive from our venue under normal traffic.<br></br><br></br>For those flying into the Washington DC area, Ronald Reagan Washington National (DCA) and Washington Dulles (IAD) are also viable options — typically around 45 minutes (or more depending on traffic) from the venue.
+                </p>
+                <p className="text-gray-700 text-sm leading-relaxed text-left">
+                  <strong>Tip:</strong> From BWI, take I-195/I-97 south to MD 2 (Governor Ritchie Highway) and follow signs to the campus at 101 College Parkway.
                 </p>
               </div>
             </div>

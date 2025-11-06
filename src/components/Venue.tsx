@@ -226,7 +226,7 @@ export default function Venue() {
                 <li>• <strong>From Annapolis:</strong> 15 minutes via MD-2 North</li>
                 <li>• <strong>From Baltimore:</strong> 45 minutes via I-97 South</li>
                 <li>• <strong>From DC Metro:</strong> 1 hour via US-50 East</li>
-                <li>• <strong>Public Transit:</strong> Anne Arundel County Transit available</li>
+                <li>• <strong>Public Transit:</strong> The campus is accessible via the Anne Arundel County Transit 203/Gold Line with a stop at Ring Rd & West Campus Dr (AACC)—a short 3-minute walk to the venue. For broader regional access, the MTA LocalLink 70 bus also serves the campus. Be sure to confirm real-time schedules using the Passio GO app.</li>
               </ul>
             </div>
           </div>
