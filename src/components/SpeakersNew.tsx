@@ -154,10 +154,10 @@ export default function SpeakersNew() {
               >
                 <div className="w-full h-[200px] md:h-40 rounded-lg mb-2 bg-gray-100 overflow-hidden relative">
                   <Image
-                    src="/images/speakers/MarkFarmer.jpg"
+                    src="/images/speakers/MarkFarmer2.png"
                     alt="Mark Farmer"
                     fill
-                    className="object-cover"
+                    className="object-cover rounded-lg"
                     style={{ objectPosition: '50% -10px' }}
                   />
                 </div>

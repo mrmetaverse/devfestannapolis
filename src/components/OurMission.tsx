@@ -1,12 +1,8 @@
 'use client'
 
+import Image from 'next/image'
+
 export default function OurMission() {
-  const organizers = [
-    { name: "Organizer Name 1", role: "Lead Organizer", image: "/images/person.png" },
-    { name: "Organizer Name 2", role: "Tech Lead", image: "/images/person.png" },
-    { name: "Organizer Name 3", role: "Community Manager", image: "/images/person.png" },
-    { name: "Organizer Name 4", role: "Events Coordinator", image: "/images/person.png" }
-  ]
 
   return (
     <section id="our-mission" className="bg-yellow-500 py-16">
@@ -33,21 +29,195 @@ export default function OurMission() {
             Meet Our Organizers
           </h3>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-            {Array.from({ length: 6 }, (_, index) => (
-              <div key={index} className="text-center group">
-                <div className="relative mb-4 overflow-hidden rounded-2xl">
-                  <img
-                    src="/images/person.png"
-                    alt="Coming Soon"
-                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                </div>
-                <h4 className="text-lg font-semibold text-gray-900">
-                  Coming Soon
-                </h4>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+            {/* Row 1 */}
+            <a 
+              href="https://www.linkedin.com/in/marielof/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-center hover:opacity-75 transition-opacity group"
+            >
+              <div className="relative mb-4 overflow-hidden rounded-2xl h-48">
+                <Image
+                  src="/images/partners/MaryLeaf.png"
+                  alt="Mary Leaf"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
               </div>
-            ))}
+              <h4 className="text-lg font-semibold text-blue-600 hover:underline">Mary Leaf</h4>
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/angelo-thalassinidis-60630922/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-center hover:opacity-75 transition-opacity group"
+            >
+              <div className="relative mb-4 overflow-hidden rounded-2xl h-48">
+                <Image
+                  src="/images/partners/AngeloThalassinidis.jpg"
+                  alt="Angelo Thalassinidis"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <h4 className="text-lg font-semibold text-blue-600 hover:underline">Angelo Thalassinidis</h4>
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/markafarmer000/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-center hover:opacity-75 transition-opacity group"
+            >
+              <div className="relative mb-4 overflow-hidden rounded-2xl h-48">
+                <Image
+                  src="/images/partners/MarkFarmer2.png"
+                  alt="Mark Farmer"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <h4 className="text-lg font-semibold text-blue-600 hover:underline">Mark Farmer</h4>
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/dennisschen/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-center hover:opacity-75 transition-opacity group"
+            >
+              <div className="relative mb-4 overflow-hidden rounded-2xl h-48">
+                <Image
+                  src="/images/partners/DennisChen.png"
+                  alt="Dennis Chen"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <h4 className="text-lg font-semibold text-blue-600 hover:underline">Dennis Chen</h4>
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/michaelcarico/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-center hover:opacity-75 transition-opacity group"
+            >
+              <div className="relative mb-4 overflow-hidden rounded-2xl h-48">
+                <Image
+                  src="/images/partners/MichaelCarico.png"
+                  alt="Michael Carico"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <h4 className="text-lg font-semibold text-blue-600 hover:underline">Michael Carico</h4>
+            </a>
+
+            {/* Row 2 */}
+            <a 
+              href="https://www.linkedin.com/in/sameer-rao-journalist/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-center hover:opacity-75 transition-opacity group"
+            >
+              <div className="relative mb-4 overflow-hidden rounded-2xl h-48">
+                <Image
+                  src="/images/partners/Sameer Rao.jpg"
+                  alt="Sameer Rao"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <h4 className="text-lg font-semibold text-blue-600 hover:underline">Sameer Rao</h4>
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/phanindra-max/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-center hover:opacity-75 transition-opacity group"
+            >
+              <div className="relative mb-4 overflow-hidden rounded-2xl h-48">
+                <Image
+                  src="/images/partners/Satya Kalaga.jpg"
+                  alt="Satya Kalaga"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <h4 className="text-lg font-semibold text-blue-600 hover:underline">Satya Kalaga</h4>
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/brady-cusack/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-center hover:opacity-75 transition-opacity group"
+            >
+              <div className="relative mb-4 overflow-hidden rounded-2xl h-48">
+                <Image
+                  src="/images/person.png"
+                  alt="Brady Cusack"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <h4 className="text-lg font-semibold text-blue-600 hover:underline">Brady Cusack</h4>
+            </a>
+            <div className="text-center group">
+              <div className="relative mb-4 overflow-hidden rounded-2xl h-48">
+                <Image
+                  src="/images/person.png"
+                  alt="Patrick"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <h4 className="text-lg font-semibold text-gray-900">Patrick</h4>
+            </div>
+            <div className="text-center group">
+              <div className="relative mb-4 overflow-hidden rounded-2xl h-48">
+                <Image
+                  src="/images/person.png"
+                  alt="Jesse Alton"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <h4 className="text-lg font-semibold text-gray-900">Jesse Alton</h4>
+            </div>
+
+            {/* Row 3 */}
+            <div className="text-center group">
+              <div className="relative mb-4 overflow-hidden rounded-2xl h-48">
+                <Image
+                  src="/images/person.png"
+                  alt="Nate Hartmeyer"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <h4 className="text-lg font-semibold text-gray-900">Nate Hartmeyer</h4>
+            </div>
+            <div className="text-center group">
+              <div className="relative mb-4 overflow-hidden rounded-2xl h-48">
+                <Image
+                  src="/images/person.png"
+                  alt="Elizabeth Leonard"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <h4 className="text-lg font-semibold text-gray-900">Elizabeth Leonard</h4>
+            </div>
+            <div className="text-center group">
+              <div className="relative mb-4 overflow-hidden rounded-2xl h-48">
+                <Image
+                  src="/images/person.png"
+                  alt="Stephanie Goldenberg"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <h4 className="text-lg font-semibold text-gray-900">Stephanie Goldenberg</h4>
+            </div>
           </div>
         </div>
       </div>
