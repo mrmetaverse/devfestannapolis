@@ -211,7 +211,7 @@ export default function SpeakersNew() {
                 <p className="text-sm font-medium text-gray-900 mb-1">Jason Michael Perry</p>
                 <p className="text-xs text-gray-600 mb-1">Founder & Chief AI Officer</p>
                 <a 
-                  href="#" 
+                  href="https://www.linkedin.com/in/jasonmperry/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center hover:opacity-80 transition-opacity"
@@ -234,7 +234,7 @@ export default function SpeakersNew() {
                 <p className="text-sm font-medium text-gray-900 mb-1">Wesley Chun</p>
                 <p className="text-xs text-gray-600 mb-1">Principal Technical Program Manager</p>
                 <a 
-                  href="#" 
+                  href="https://www.linkedin.com/in/wescpy/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center hover:opacity-80 transition-opacity"

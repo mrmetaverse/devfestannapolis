@@ -4,19 +4,19 @@ import Link from 'next/link'
 
 export default function SponsorsPartnersNew() {
   const allPartners = [
-    { name: "AACC", logo: "/images/sponsors/AACC.png", width: 280, height: 100, url: "#" },
-    { name: "Technically", logo: "/images/sponsors/Technically.png", width: 280, height: 100, url: "#" },
+    { name: "AACC", logo: "/images/sponsors/AACC.png", width: 280, height: 100, url: "https://www.aacc.edu/" },
+    { name: "Technically", logo: "/images/sponsors/Technically.png", width: 280, height: 100, url: "https://technical.ly/" },
     { name: "MLof Strategies", logo: "/images/sponsors/MLoS.png", width: 280, height: 100, url: "https://www.mlofstrategies.com/" },
     { name: "Shannon Cyber AI", logo: "/images/sponsors/ShannonAI.png", width: 280, height: 100, url: "https://www.shannoncyber.ai/" },
     { name: "AbleSpark", logo: "/images/sponsors/ablespark.png", width: 280, height: 100, url: "https://www.ablespark.com" },
-    { name: "Signum", logo: "/images/sponsors/SignumTechnologies.png", width: 280, height: 100, url: "#" },
-    { name: "Innovation Maryland", logo: "/images/sponsors/InnovationMaryland.png", width: 280, height: 100, url: "#" },
+    { name: "Signum", logo: "/images/sponsors/SignumTechnologies.png", width: 280, height: 100, url: "https://signum-tech.com/" },
+    { name: "Innovation Maryland", logo: "/images/sponsors/InnovationMaryland.png", width: 280, height: 100, url: "https://innovationmaryland.org/" },
     { name: "Virgent AI", logo: "/images/sponsors/virgentai.png", width: 320, height: 120, url: "https://www.virgent.ai/" },
-    { name: "GDG Washington DC", logo: "/images/sponsors/GDGDC.png", width: 280, height: 100, url: "#" },
-    { name: "GDG Washington University", logo: "/images/sponsors/GDGGEorgeWashingtonUniversity.png", width: 280, height: 100, url: "#" },
-    { name: "GDG College Park", logo: "/images/sponsors/GDGCollegePark.png", width: 280, height: 100, url: "#" },
-    { name: "GDG Baltimore", logo: "/images/sponsors/GDGBaltimore.png", width: 280, height: 100, url: "#" },
-    { name: "GDG Annapolis", logo: "/images/sponsors/GDGAnnapolis.png", width: 280, height: 100, url: "#" }
+    { name: "GDG Washington DC", logo: "/images/sponsors/GDGDC.png", width: 280, height: 100, url: "https://gdg.community.dev/gdg-washington-dc/" },
+    { name: "GDG Washington University", logo: "/images/sponsors/GDGGEorgeWashingtonUniversity.png", width: 280, height: 100, url: "https://gdg.community.dev/gdg-on-campus-the-george-washington-university-washington-dc-united-states/" },
+    { name: "GDG College Park", logo: "/images/sponsors/GDGCollegePark.png", width: 280, height: 100, url: "https://gdg.community.dev/gdg-on-campus-university-of-maryland-college-park-united-states/" },
+    { name: "GDG Baltimore", logo: "/images/sponsors/GDGBaltimore.png", width: 280, height: 100, url: "https://gdg.community.dev/gdg-baltimore/" },
+    { name: "GDG Annapolis", logo: "/images/sponsors/GDGAnnapolis.png", width: 280, height: 100, url: "https://gdg.community.dev/gdg-annapolis/" }
   ]
 
   const sponsorshipBenefits = [

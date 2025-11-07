@@ -41,7 +41,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${roboto.variable} ${robotoMono.variable} font-roboto`}>{children}</body>
+      <body className={`${roboto.variable} ${robotoMono.variable} font-roboto`} suppressHydrationWarning>{children}</body>
     </html>
   )
 }

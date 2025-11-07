@@ -77,7 +77,7 @@ export default function Venue() {
             </div>
             
             <div className="bg-google-blue text-white p-8 rounded-lg devfest-card">
-              <div className="text-lg font-semibold mb-3 text-blue-100">� Event Details</div>
+              <div className="text-lg font-semibold mb-3 text-blue-100">Event Details</div>
               <h3 className="text-3xl font-bold mb-4">November 15, 2025</h3>
               <p className="text-xl mb-2">10:00 AM – 5:00 PM (EST)</p>
               <p className="text-blue-200 mb-4">Full day of tech talks, workshops, and networking</p>
