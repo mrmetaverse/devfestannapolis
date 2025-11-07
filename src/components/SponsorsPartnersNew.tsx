@@ -6,8 +6,9 @@ export default function SponsorsPartnersNew() {
   const allPartners = [
     { name: "AACC", logo: "/images/sponsors/AACC.png", width: 280, height: 100, url: "#" },
     { name: "Technically", logo: "/images/sponsors/Technically.png", width: 280, height: 100, url: "#" },
-    { name: "AbleSpark", logo: "/images/sponsors/ablespark.png", width: 280, height: 100, url: "https://www.ablespark.com" },
+    { name: "MLof Strategies", logo: "/images/sponsors/MLoS.png", width: 280, height: 100, url: "https://www.mlofstrategies.com/" },
     { name: "Shannon Cyber AI", logo: "/images/sponsors/ShannonAI.png", width: 280, height: 100, url: "https://www.shannoncyber.ai/" },
+    { name: "AbleSpark", logo: "/images/sponsors/ablespark.png", width: 280, height: 100, url: "https://www.ablespark.com" },
     { name: "Signum", logo: "/images/sponsors/SignumTechnologies.png", width: 280, height: 100, url: "#" },
     { name: "Innovation Maryland", logo: "/images/sponsors/InnovationMaryland.png", width: 280, height: 100, url: "#" },
     { name: "Virgent AI", logo: "/images/sponsors/virgentai.png", width: 320, height: 120, url: "https://www.virgent.ai/" },
