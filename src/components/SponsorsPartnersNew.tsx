@@ -4,11 +4,18 @@ import Link from 'next/link'
 
 export default function SponsorsPartnersNew() {
   const allPartners = [
-    { name: "Google", logo: "/sponsors/google.png", width: 200, height: 64, url: "https://www.google.com/" },
-    { name: "AbleSpark", logo: "/sponsors/ablespark.png", width: 280, height: 100, url: "https://www.ablespark.com" },
-    { name: "MLof Strategies", logo: "/sponsors/MLoS.png", width: 280, height: 100, url: "https://www.mlofstrategies.com/" },
-    { name: "ShannonAI", logo: "/sponsors/shannoai.jpeg", width: 280, height: 100, url: "https://www.shannoncyber.ai/" },
-    { name: "Virgent AI", logo: "/sponsors/virgentai.png", width: 320, height: 120, url: "https://www.virgent.ai/" }
+    { name: "AACC", logo: "/images/sponsors/AACC.png", width: 280, height: 100, url: "#" },
+    { name: "Technically", logo: "/images/sponsors/Technically.png", width: 280, height: 100, url: "#" },
+    { name: "AbleSpark", logo: "/images/sponsors/ablespark.png", width: 280, height: 100, url: "https://www.ablespark.com" },
+    { name: "Shannon Cyber AI", logo: "/images/sponsors/ShannonAI.png", width: 280, height: 100, url: "https://www.shannoncyber.ai/" },
+    { name: "Signum", logo: "/images/sponsors/SignumTechnologies.png", width: 280, height: 100, url: "#" },
+    { name: "Innovation Maryland", logo: "/images/sponsors/InnovationMaryland.png", width: 280, height: 100, url: "#" },
+    { name: "Virgent AI", logo: "/images/sponsors/virgentai.png", width: 320, height: 120, url: "https://www.virgent.ai/" },
+    { name: "GDG Washington DC", logo: "/images/sponsors/GDGDC.png", width: 280, height: 100, url: "#" },
+    { name: "GDG Washington University", logo: "/images/sponsors/GDGGEorgeWashingtonUniversity.png", width: 280, height: 100, url: "#" },
+    { name: "GDG College Park", logo: "/images/sponsors/GDGCollegePark.png", width: 280, height: 100, url: "#" },
+    { name: "GDG Baltimore", logo: "/images/sponsors/GDGBaltimore.png", width: 280, height: 100, url: "#" },
+    { name: "GDG Annapolis", logo: "/images/sponsors/GDGAnnapolis.png", width: 280, height: 100, url: "#" }
   ]
 
   const sponsorshipBenefits = [
@@ -33,7 +40,7 @@ export default function SponsorsPartnersNew() {
 
           {/* All Partners */}
           <div className="mb-12">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {allPartners.map((partner, index) => (
                 <Link
                   key={index}
@@ -45,7 +52,7 @@ export default function SponsorsPartnersNew() {
                   <img
                     src={partner.logo}
                     alt={`${partner.name} logo`}
-                    className="max-w-full h-16 object-contain opacity-80 hover:opacity-100 transition-opacity"
+                    className={`max-w-full object-contain opacity-80 hover:opacity-100 transition-opacity ${partner.name.includes('GDG') ? 'h-24' : 'h-16'}`}
                   />
                 </Link>
               ))}
