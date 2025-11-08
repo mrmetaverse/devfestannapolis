@@ -11,6 +11,7 @@ export default function SponsorsPartnersNew() {
     { name: "AbleSpark", logo: "/images/sponsors/ablespark.png", width: 280, height: 100, url: "https://www.ablespark.com" },
     { name: "Signum", logo: "/images/sponsors/SignumTechnologies.png", width: 280, height: 100, url: "https://signum-tech.com/" },
     { name: "Innovation Maryland", logo: "/images/sponsors/InnovationMaryland.png", width: 280, height: 100, url: "https://innovationmaryland.org/" },
+    { name: "PerryLabs", logo: "/images/sponsors/PerryLabs.png", width: 280, height: 100, url: "https://jasonmperry.com/" },
     { name: "Virgent AI", logo: "/images/sponsors/virgentai.png", width: 320, height: 120, url: "https://www.virgent.ai/" },
     { name: "GDG Washington DC", logo: "/images/sponsors/GDGDC.png", width: 280, height: 100, url: "https://gdg.community.dev/gdg-washington-dc/" },
     { name: "GDG Washington University", logo: "/images/sponsors/GDGGEorgeWashingtonUniversity.png", width: 280, height: 100, url: "https://gdg.community.dev/gdg-on-campus-the-george-washington-university-washington-dc-united-states/" },
