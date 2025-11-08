@@ -20,6 +20,16 @@ export default function SponsorsPartnersNew() {
     { name: "GDG Annapolis", logo: "/images/sponsors/GDGAnnapolis.png", width: 280, height: 100, url: "https://gdg.community.dev/gdg-annapolis/" }
   ]
 
+  const mainPartners = [
+    ...allPartners.slice(0, 9),
+    { name: "Google", logo: "/images/sponsors/google.png", width: 280, height: 100, url: "https://www.google.com/" },
+    allPartners[9],  // GDG Washington DC
+    allPartners[13], // GDG Annapolis
+    allPartners[12], // GDG Baltimore
+    allPartners[10], // GDG Washington University
+    allPartners[11]  // GDG College Park
+  ]
+
   const sponsorshipBenefits = [
     { tier: "Platinum", price: "$5,000+", benefits: ["Logo on all materials", "Keynote opportunity", "Premium booth space", "5 tickets"] },
     { tier: "Gold", price: "$2,500+", benefits: ["Logo on website", "Speaking slot", "Booth space", "3 tickets"] },
@@ -42,19 +52,29 @@ export default function SponsorsPartnersNew() {
 
           {/* All Partners */}
           <div className="mb-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {allPartners.map((partner, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {mainPartners.map((partner, index) => (
                 <Link
                   key={index}
                   href={partner.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                  className={`flex items-center justify-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors ${partner.name === 'Google' ? 'py-2' : ''}`}
                 >
                   <img
                     src={partner.logo}
                     alt={`${partner.name} logo`}
-                    className={`max-w-full object-contain opacity-80 hover:opacity-100 transition-opacity ${partner.name.includes('GDG') ? 'h-24' : 'h-16'}`}
+                    className={`object-contain opacity-80 hover:opacity-100 transition-opacity ${
+                      partner.name === 'Google'
+                        ? 'h-24 max-w-[120px]'
+                        : partner.name.includes('GDG') && partner.name !== 'Google'
+                        ? 'h-32 max-w-full' 
+                        : partner.name === 'Technically' || partner.name === 'AbleSpark' || partner.name === 'Shannon Cyber AI' || partner.name === 'Innovation Maryland' || partner.name === 'Virgent AI'
+                        ? 'h-[88px] max-w-[200px]' 
+                        : partner.name === 'PerryLabs'
+                        ? 'h-[54px] max-w-[140px]'
+                        : 'h-16 max-w-full'
+                    }`}
                   />
                 </Link>
               ))}
