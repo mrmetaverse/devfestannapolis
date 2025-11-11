@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function EventVenue() {
   return (
-    <section id="event-venue" className="bg-blue-600 py-16">
+    <section id="event-venue" className="bg-blue-500 py-16">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="bg-white rounded-2xl p-8 lg:p-12">
           {/* Main Title */}

@@ -38,11 +38,11 @@ export default function BuildFutureAI() {
   ]
 
   return (
-    <section id="hackathon" className="bg-blue-600 py-16">
+    <section id="hackathon" className="bg-green-500 py-16">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="bg-white rounded-2xl p-8 lg:p-12">
           {/* Main Title */}
-          <h2 className="text-4xl lg:text-5xl font-bold text-blue-600 text-center mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-green-600 text-center mb-6">
             Build the Future of AI
           </h2>
           
@@ -51,7 +51,7 @@ export default function BuildFutureAI() {
             techniques, and applications that are transforming our world.
           </p>
 
-          <p className="text-lg text-blue-600 font-semibold text-center max-w-4xl mx-auto mb-8 leading-relaxed">
+          <p className="text-lg text-green-600 font-semibold text-center max-w-4xl mx-auto mb-8 leading-relaxed">
             Join the DevFest Annapolis Agentic AI Challenge! Are you a developer, data scientist, designer, 
             tinkerer, or just a tech enthusiast ready to explore the next frontier of AI?
           </p>

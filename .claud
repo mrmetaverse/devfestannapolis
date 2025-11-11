@@ -167,15 +167,12 @@ import Image from 'next/image'
 
 ### Current State
 1. **Placeholder Content:**
-   - Sponsor/partner logos are placeholders
-   - Speaker lineup needs real profiles
    - Event images are stock photos
 
 2. **Missing Features:**
    - Registration system integration (Eventbrite/Lu.ma planned)
    - LangChain chatbot for event Q&A
    - Analytics/monitoring setup
-   - Custom domain (devfestannapolis.com)
    - Blog/news section
 
 3. **Code Cleanup:**
@@ -193,9 +190,9 @@ import Image from 'next/image'
 - [x] Community page with Matrix/Element info
 - [x] Sponsors/partners section structure
 - [x] Free registration model
-- [ ] Custom domain configuration
-- [ ] Real sponsor logos and branding
-- [ ] Real speaker profiles and photos
+- [x] Custom domain configuration
+- [x] Real sponsor logos and branding
+- [x] Real speaker profiles and photos
 - [ ] LangChain chatbot integration
 - [ ] Registration system (Eventbrite/Lu.ma)
 - [ ] Blog/news section

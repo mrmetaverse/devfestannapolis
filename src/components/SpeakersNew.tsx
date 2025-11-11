@@ -56,7 +56,7 @@ export default function SpeakersNew() {
   ]
 
   return (
-    <section id="speakers" className="bg-green-600 py-16">
+    <section id="speakers" className="bg-green-500 py-16">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="bg-white rounded-2xl p-8 lg:p-12">
           {/* Main Title */}

@@ -20,7 +20,7 @@ export default function ReadyToJoin() {
   ]
 
   return (
-    <section id="ready-to-join" className="bg-blue-600 py-16 pt-40">
+    <section id="ready-to-join" className="bg-blue-500 py-16 pt-40">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="bg-white rounded-2xl p-8 lg:p-12">
           {/* Main Title */}

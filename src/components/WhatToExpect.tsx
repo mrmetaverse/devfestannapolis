@@ -2,7 +2,7 @@
 
 export default function WhatToExpect() {
   return (
-    <section id="what-to-expect" className="bg-green-600 py-16">
+    <section id="what-to-expect" className="bg-green-500 py-16">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="bg-white rounded-2xl p-8 lg:p-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-green-600 text-center mb-8">

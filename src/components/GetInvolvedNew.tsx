@@ -4,11 +4,11 @@ import Link from 'next/link'
 
 export default function GetInvolvedNew() {
   return (
-    <section id="get-involved" className="bg-yellow-500 py-16">
+    <section id="get-involved" className="bg-blue-500 py-16">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="bg-white rounded-2xl p-8 lg:p-12">
           {/* Main Title */}
-          <h2 className="text-4xl lg:text-5xl font-bold text-yellow-600 text-center mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-blue-600 text-center mb-6">
             Get Involved
           </h2>
           

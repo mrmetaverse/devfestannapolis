@@ -5,12 +5,12 @@ import Image from 'next/image'
 export default function OurMission() {
 
   return (
-    <section id="our-mission" className="bg-yellow-500 py-16">
+    <section id="our-mission" className="bg-blue-500 py-16">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="bg-white rounded-2xl p-8 lg:p-12">
           {/* Mission Statement */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-yellow-600 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-blue-600 mb-6">
               Our Mission
             </h2>
           <p className="text-2xl lg:text-3xl text-gray-700 font-medium max-w-4xl mx-auto leading-relaxed">

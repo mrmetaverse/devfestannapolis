@@ -11,6 +11,7 @@ import WhyAttend from '@/components/WhyAttend'
 import EventVenue from '@/components/EventVenue'
 import GetInvolvedNew from '@/components/GetInvolvedNew'
 import SpeakersNew from '@/components/SpeakersNew'
+import Schedule from '@/components/Schedule'
 import BuildFutureAI from '@/components/BuildFutureAI'
 import SponsorsPartnersNew from '@/components/SponsorsPartnersNew'
 import ReadyToJoin from '@/components/ReadyToJoin'
@@ -30,6 +31,7 @@ export default function Home() {
       <WhyAttend />
       <EventVenue />
       <SpeakersNew />
+      <Schedule />
       <GetInvolvedNew />
       <BuildFutureAI />
       <SponsorsPartnersNew />

@@ -42,11 +42,11 @@ export default function SponsorsPartnersNew() {
   ]
 
   return (
-    <section id="partners" className="bg-green-600 py-16">
+    <section id="partners" className="bg-yellow-500 py-16">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="bg-white rounded-2xl p-8 lg:p-12">
           {/* Main Title */}
-          <h2 className="text-4xl lg:text-5xl font-bold text-green-600 text-center mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-yellow-600 text-center mb-6">
             Partners
           </h2>
           
