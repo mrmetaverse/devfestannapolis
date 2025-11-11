@@ -13,6 +13,8 @@ export default function SponsorsPartnersNew() {
     { name: "Innovation Maryland", logo: "/images/sponsors/InnovationMaryland.png", width: 280, height: 100, url: "https://innovationmaryland.org/" },
     { name: "PerryLabs", logo: "/images/sponsors/PerryLabs.png", width: 280, height: 100, url: "https://jasonmperry.com/" },
     { name: "Virgent AI", logo: "/images/sponsors/virgentai.png", width: 320, height: 120, url: "https://www.virgent.ai/" },
+    { name: "Chick-Fil-A Severna Park", logo: "/images/sponsors/ChickFilASP.png", width: 280, height: 100, url: "https://www.chick-fil-a.com/locations/md/severna-park" },
+    { name: "Eye On Annapolis", logo: "/images/sponsors/EyeOnAnnapolis.jpg", width: 280, height: 100, url: "https://www.eyeonannapolis.net/" },
     { name: "GDG Washington DC", logo: "/images/sponsors/GDGDC.png", width: 280, height: 100, url: "https://gdg.community.dev/gdg-washington-dc/" },
     { name: "GDG Washington University", logo: "/images/sponsors/GDGGEorgeWashingtonUniversity.png", width: 280, height: 100, url: "https://gdg.community.dev/gdg-on-campus-the-george-washington-university-washington-dc-united-states/" },
     { name: "GDG College Park", logo: "/images/sponsors/GDGCollegePark.png", width: 280, height: 100, url: "https://gdg.community.dev/gdg-on-campus-university-of-maryland-college-park-united-states/" },
@@ -23,11 +25,13 @@ export default function SponsorsPartnersNew() {
   const mainPartners = [
     ...allPartners.slice(0, 9),
     { name: "Google", logo: "/images/sponsors/google.png", width: 280, height: 100, url: "https://www.google.com/" },
-    allPartners[9],  // GDG Washington DC
-    allPartners[13], // GDG Annapolis
-    allPartners[12], // GDG Baltimore
-    allPartners[10], // GDG Washington University
-    allPartners[11]  // GDG College Park
+    allPartners[9],  // Chick-Fil-A Severna Park
+    allPartners[10], // Eye On Annapolis
+    allPartners[11], // GDG Washington DC
+    allPartners[15], // GDG Annapolis
+    allPartners[14], // GDG Baltimore
+    allPartners[12], // GDG Washington University
+    allPartners[13]  // GDG College Park
   ]
 
   const sponsorshipBenefits = [
