@@ -14,10 +14,11 @@ export default function Navigation() {
     { href: '#why-attend', label: 'Why Attend', bgColor: 'bg-yellow-500' },
     { href: '#event-venue', label: 'Event Venue', bgColor: 'bg-blue-500' },
     { href: '#speakers', label: 'Speakers', bgColor: 'bg-green-500' },
-    { href: '#get-involved', label: 'Get Involved', bgColor: 'bg-yellow-500' },
-    { href: '#hackathon', label: 'Hackathon', bgColor: 'bg-blue-500' },
-    { href: '#partners', label: 'Partners', bgColor: 'bg-green-500' },
-    { href: '#our-mission', label: 'Our Mission', bgColor: 'bg-yellow-500' },
+    { href: '#agenda', label: 'Schedule', bgColor: 'bg-yellow-500' },
+    { href: '#get-involved', label: 'Get Involved', bgColor: 'bg-blue-500' },
+    { href: '#hackathon', label: 'Hackathon', bgColor: 'bg-green-500' },
+    { href: '#partners', label: 'Partners', bgColor: 'bg-yellow-500' },
+    { href: '#our-mission', label: 'Our Mission', bgColor: 'bg-blue-500' },
   ]
 
   return (
@@ -56,9 +57,9 @@ export default function Navigation() {
                 </Link>
               ))}
             </div>
-            {/* Second row - 4 buttons */}
+            {/* Second row - 5 buttons */}
             <div className="flex space-x-2 justify-end">
-              {navItems.slice(5, 9).map((item) => (
+              {navItems.slice(5, 10).map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}

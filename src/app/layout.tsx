@@ -26,6 +26,20 @@ export const metadata: Metadata = {
     description: 'Join Annapolis DevFest 2025 for tech talks, coding labs, and AI clinics. Free event at AACC - November 15, 2025',
     type: 'website',
     locale: 'en_US',
+    images: [
+      {
+        url: '/images/devfest_logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'DevFest Annapolis 2025 Logo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Annapolis DevFest 2025 | Tech & Innovation Conference',
+    description: 'Join Annapolis DevFest 2025 for tech talks, coding labs, and AI clinics. Free event at AACC - November 15, 2025',
+    images: ['/images/devfest_logo.png'],
   },
 }
 
@@ -41,7 +55,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${roboto.variable} ${robotoMono.variable} font-roboto`}>{children}</body>
+      <body className={`${roboto.variable} ${robotoMono.variable} font-roboto`} suppressHydrationWarning>{children}</body>
     </html>
   )
 }

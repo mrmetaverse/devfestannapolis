@@ -77,7 +77,7 @@ export default function Venue() {
             </div>
             
             <div className="bg-google-blue text-white p-8 rounded-lg devfest-card">
-              <div className="text-lg font-semibold mb-3 text-blue-100">� Event Details</div>
+              <div className="text-lg font-semibold mb-3 text-blue-100">Event Details</div>
               <h3 className="text-3xl font-bold mb-4">November 15, 2025</h3>
               <p className="text-xl mb-2">10:00 AM – 5:00 PM (EST)</p>
               <p className="text-blue-200 mb-4">Full day of tech talks, workshops, and networking</p>
@@ -226,7 +226,7 @@ export default function Venue() {
                 <li>• <strong>From Annapolis:</strong> 15 minutes via MD-2 North</li>
                 <li>• <strong>From Baltimore:</strong> 45 minutes via I-97 South</li>
                 <li>• <strong>From DC Metro:</strong> 1 hour via US-50 East</li>
-                <li>• <strong>Public Transit:</strong> Anne Arundel County Transit available</li>
+                <li>• <strong>Public Transit:</strong> The campus is accessible via the Anne Arundel County Transit 203/Gold Line with a stop at Ring Rd & West Campus Dr (AACC)—a short 3-minute walk to the venue. For broader regional access, the MTA LocalLink 70 bus also serves the campus. Be sure to confirm real-time schedules using the Passio GO app.</li>
               </ul>
             </div>
           </div>

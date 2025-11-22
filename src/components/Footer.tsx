@@ -34,6 +34,7 @@ export default function Footer() {
               Copyright © 2025 DevFest Annapolis - GDG Annapolis.
             </p>
             <div className="flex flex-col gap-2 justify-center md:justify-end max-w-[50%]">
+              {/* First row - 5 items (matching top menu) */}
               <div className="flex flex-wrap gap-4 justify-center md:justify-end">
                 <Link href="#ready-to-join" className="text-gray-400 hover:text-white transition-colors duration-200">
                   Register Now
@@ -50,11 +51,12 @@ export default function Footer() {
                 <Link href="#speakers" className="text-gray-400 hover:text-white transition-colors duration-200">
                   Speakers
                 </Link>
+              </div>
+              {/* Second row - 4 items (matching top menu) */}
+              <div className="flex flex-wrap gap-4 justify-center md:justify-end">
                 <Link href="#get-involved" className="text-gray-400 hover:text-white transition-colors duration-200">
                   Get Involved
                 </Link>
-              </div>
-              <div className="flex flex-wrap gap-4 justify-center md:justify-end">
                 <Link href="#hackathon" className="text-gray-400 hover:text-white transition-colors duration-200">
                   Hackathon
                 </Link>
