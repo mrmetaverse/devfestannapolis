@@ -36,7 +36,7 @@ export default function InfoPanel({ isOpen, onClose }: InfoPanelProps) {
             <div className="flex items-start space-x-3">
               <Calendar className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
               <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Thank you to everyone who made DevFest Annapolis 2025 a huge success!</h3>
+                <h3 className="font-semibold text-gray-900 mb-1">Thank you to everyone who made DevFest Annapolis 2025<br />a huge success!</h3>
                 <p className="text-gray-600 text-sm">
                   We couldn&apos;t have done it without our amazing speakers, sponsors, volunteers, and attendees. 
                   Your passion and dedication made this event truly special!

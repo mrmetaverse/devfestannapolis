@@ -48,7 +48,7 @@ export default function ReadyToJoin() {
           {/* Thank You Message */}
           <div className="text-center bg-gradient-to-r from-blue-50 to-green-50 rounded-xl p-8 mb-8">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
-              Thank you to everyone who made DevFest Annapolis 2025 a huge success!
+              Thank you to everyone who made DevFest Annapolis 2025<br />a huge success!
             </h3>
             <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
               We couldn&apos;t have done it without our amazing speakers, sponsors, volunteers, and attendees. 
