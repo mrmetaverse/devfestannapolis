@@ -45,7 +45,19 @@ export default function ReadyToJoin() {
           </div>
 
 
-          {/* Registration CTA */}
+          {/* Thank You Message */}
+          <div className="text-center bg-gradient-to-r from-blue-50 to-green-50 rounded-xl p-8 mb-8">
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">
+              Thank you to everyone who made DevFest Annapolis 2025 a huge success!
+            </h3>
+            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
+              We couldn&apos;t have done it without our amazing speakers, sponsors, volunteers, and attendees. 
+              Your passion and dedication made this event truly special!
+            </p>
+          </div>
+
+          {/* Registration CTA - Commented out for next year */}
+          {/* 
           <div className="text-center bg-gradient-to-r from-blue-50 to-green-50 rounded-xl p-8 mb-8">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
               Registration is Now Open!
@@ -68,6 +80,7 @@ export default function ReadyToJoin() {
               Limited to 500 attendees • Registration closes when full
             </p>
           </div>
+          */}
         </div>
       </div>
     </section>

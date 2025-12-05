@@ -16,6 +16,8 @@ export default function Footer() {
             <p className="text-gray-300">101 College Parkway, Arnold, MD 21012</p>
           </div>
           
+          {/* Get Your Tickets Now Button - Commented out for next year */}
+          {/* 
           <div className="mb-8">
             <Link
               href="https://gdg.community.dev/events/details/google-gdg-annapolis-presents-devfest-annapolis-2025/cohost-gdg-annapolis"
@@ -26,6 +28,7 @@ export default function Footer() {
               Get Your Tickets Now
             </Link>
           </div>
+          */}
         </div>
         
         <div className="border-t border-gray-800 pt-8 text-center">

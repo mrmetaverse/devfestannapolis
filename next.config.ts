@@ -8,7 +8,12 @@ const nextConfig: NextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
   
+  // Turbopack configuration (empty to silence Next.js 16 warning)
+  // Note: For Vagrant file watching, we use --webpack flag in dev script
+  turbopack: {},
+  
   // Webpack configuration for file watching in VMs (Vagrant)
+  // Used when running with --webpack flag
   webpack: (config, { dev }) => {
     if (dev) {
       config.watchOptions = {

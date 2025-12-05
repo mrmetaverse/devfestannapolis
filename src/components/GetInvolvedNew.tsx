@@ -42,6 +42,8 @@ export default function GetInvolvedNew() {
               <div className="text-3xl mb-4">💰</div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Sponsor</h3>
               <p className="text-gray-700 mb-6 leading-relaxed">Support innovation; become an official DevFest Annapolis sponsor.</p>
+              {/* Apply to Sponsor Button - Commented out for next year */}
+              {/* 
               <Link
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfyej_8YuhVnS_LgHtb-hkhmQY66gU3i33Asj5HO_3AUYfY8A/viewform"
                 target="_blank"
@@ -50,12 +52,15 @@ export default function GetInvolvedNew() {
               >
                 Apply to<br />Sponsor
               </Link>
+              */}
             </div>
 
             <div className="bg-blue-50 rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
               <div className="text-3xl mb-4">🤝</div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Partner</h3>
               <p className="text-gray-700 mb-6 leading-relaxed">Partner with DevFest Annapolis to broaden your reach.<br /><br /></p>
+              {/* Apply to Partner Button - Commented out for next year */}
+              {/* 
               <Link
                 href="https://forms.gle/X2BawbWefoRyBMqu8"
                 target="_blank"
@@ -64,12 +69,15 @@ export default function GetInvolvedNew() {
               >
                 Apply to<br />Partner
               </Link>
+              */}
             </div>
 
             <div className="bg-blue-50 rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
               <div className="text-3xl mb-4">🎤</div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Speak</h3>
               <p className="text-gray-700 mb-6 leading-relaxed">Showcase your knowledge; apply to speak at DevFest Annapolis 2025.</p>
+              {/* Apply to Speak Button - Commented out for next year */}
+              {/* 
               <Link
                 href="https://forms.gle/KRDGbMn6m9t4UPdv9"
                 target="_blank"
@@ -78,12 +86,15 @@ export default function GetInvolvedNew() {
               >
                 Apply to<br />Speak
               </Link>
+              */}
             </div>
 
             <div className="bg-blue-50 rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
               <div className="text-3xl mb-4">🙋‍♀️</div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Volunteer</h3>
               <p className="text-gray-700 mb-6 leading-relaxed">Be part of DevFest Annapolis 25&apos;s success; join our volunteer community.</p>
+              {/* Join Our Community Button - Commented out for next year */}
+              {/* 
               <Link
                 href="https://forms.gle/cCes2WUpKPheFHZu7"
                 target="_blank"
@@ -92,6 +103,7 @@ export default function GetInvolvedNew() {
               >
                 Join Our<br />Community
               </Link>
+              */}
             </div>
           </div>
 

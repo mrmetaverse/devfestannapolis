@@ -38,6 +38,8 @@ export default function GetInvolved() {
             <div key={index} className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">{item.title}</h3>
               <p className="text-gray-700 mb-6 leading-relaxed">{item.description}</p>
+              {/* All Buttons - Commented out for next year */}
+              {/* 
               <a
                 href={item.href}
                 target="_blank"
@@ -46,6 +48,7 @@ export default function GetInvolved() {
               >
                 {item.action}
               </a>
+              */}
             </div>
           ))}
         </div>

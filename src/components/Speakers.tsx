@@ -69,6 +69,8 @@ export default function Speakers() {
               Share your expertise with Maryland&apos;s tech community. We&apos;re looking for speakers on AI, cloud technologies, 
               web development, mobile apps, and emerging tech trends.
             </p>
+            {/* Apply to Speak Button - Commented out for next year */}
+            {/* 
             <a
               href="https://forms.gle/KRDGbMn6m9t4UPdv9"
               target="_blank"
@@ -77,6 +79,7 @@ export default function Speakers() {
             >
               Apply to Speak
             </a>
+            */}
           </div>
         </div>
         

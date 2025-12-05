@@ -18,6 +18,10 @@ const robotoMono = Roboto_Mono({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || 
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://devfestannapolis.org')
+  ),
   title: 'Annapolis DevFest 2025 | Tech & Innovation Conference',
   description: 'Join Annapolis DevFest 2025 for tech talks, coding labs, and AI clinics. Free event at AACC. Learn, connect, and build the future.',
   keywords: 'DevFest, Annapolis, Maryland, tech conference, AI, Google, cloud, developers, innovation, AACC, Anne Arundel County, East Coast, coding labs, small business',
