@@ -30,7 +30,11 @@ devfestannapolis/
 │   │   └── community/
 │   │       └── page.tsx        # Community/Matrix info page
 │   └── components/             # React components (one per section)
+├── docs/                       # Project documentation
+│   └── GALLERY_IMPLEMENTATION.md  # Event photo gallery implementation guide
 ├── public/                     # Static assets (images, logos)
+│   └── images/
+│       └── devfest2025/       # Event photos (20 images)
 ├── next.config.ts             # Next.js config with image optimization
 ├── tailwind.config.ts         # Tailwind v4 configuration
 └── vercel.json                # Deployment configuration
@@ -71,7 +75,8 @@ This project follows official Google DevFest branding guidelines:
 Each major section is a separate component in `/src/components/`:
 - `Navigation.tsx` - Fixed header with logo and nav links
 - `Hero.tsx` - (Legacy - not currently used)
-- `ReadyToJoin.tsx` - Hero section with registration CTA
+- `ReadyToJoin.tsx` - Hero section with registration CTA and event gallery
+- `EventGallery.tsx` - **NEW** Photo gallery with lightbox (20 event photos)
 - `WhatToExpect.tsx` - Event highlights grid
 - `WhyAttend.tsx` - Target audience sections
 - `EventVenue.tsx` - Venue information with images
@@ -199,7 +204,7 @@ import Image from 'next/image'
 - [ ] Google Analytics 4
 
 ### Post-Event (After Nov 15, 2025)
-- [ ] Photo gallery from event
+- [x] Photo gallery from event (EventGallery.tsx - 20 photos with lightbox)
 - [ ] Session recordings/slides
 - [ ] Attendee testimonials
 - [ ] Next year's event announcement
@@ -275,6 +280,7 @@ export default function ComponentName() {
 ### Common Tasks
 - **Add sponsor logo:** Place in `/public/sponsors/`, update array in SponsorsPartnersNew.tsx
 - **Add speaker:** Update speaker array in SpeakersNew.tsx component
+- **Add event photos:** Place in `/public/images/devfest2025/`, update array in EventGallery.tsx
 - **Update event details:** Check layout.tsx metadata, Footer.tsx, EventVenue.tsx
 - **Change colors:** Modify globals.css design tokens (but preserve DevFest brand)
 - **Add new section:** Create component, import in page.tsx, add to navigation
@@ -369,6 +375,14 @@ git push origin main    # Auto-deploys to Vercel
 # Test mobile: Chrome DevTools → Toggle device toolbar
 # Test build: npm run build && npm start
 ```
+
+## Documentation
+
+### Project Documentation
+- **Gallery Implementation:** `docs/GALLERY_IMPLEMENTATION.md` - Complete guide for event photo gallery
+  - Features: Responsive grid, lightbox, accessibility, performance optimizations
+  - Technologies: Next.js Image, Lucide icons, custom lightbox (no external deps)
+  - Testing checklist and maintenance notes included
 
 ## Emergency Contacts & Resources
 

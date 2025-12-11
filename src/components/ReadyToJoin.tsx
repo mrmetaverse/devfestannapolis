@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import EventGallery from './EventGallery'
 
 export default function ReadyToJoin() {
   const quickFacts = [
@@ -25,13 +26,16 @@ export default function ReadyToJoin() {
         <div className="bg-white rounded-2xl p-8 lg:p-12">
           {/* Main Title */}
           <h2 className="text-4xl lg:text-5xl font-bold text-blue-600 text-center mb-6">
-            Get Ready for DevFest Annapolis 2025!
+            DevFest Annapolis 2025
           </h2>
           
+          {/* Paragraph commented out */}
+          {/*
           <p className="text-xl text-gray-700 text-center max-w-3xl mx-auto mb-12">
             Don&apos;t miss Maryland&apos;s premier developer conference. Register now and be part of 
             an amazing community-driven tech event!
           </p>
+          */}
 
           {/* Quick Facts */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
@@ -55,6 +59,9 @@ export default function ReadyToJoin() {
               Your passion and dedication made this event truly special!
             </p>
           </div>
+
+          {/* Event Photo Gallery */}
+          <EventGallery />
 
           {/* Registration CTA - Commented out for next year */}
           {/* 
